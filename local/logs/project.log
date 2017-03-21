@@ -1,0 +1,678 @@
+2017-03-21T13:20:04.016Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-21T13:20:04.022Z - normal: checking language setting...
+2017-03-21T13:20:04.023Z - normal: Language: zh
+2017-03-21T13:20:06.128Z - success: protocol editor-framework registered
+2017-03-21T13:20:06.128Z - success: protocol app registered
+2017-03-21T13:20:06.129Z - success: protocol theme registered
+2017-03-21T13:20:06.129Z - success: protocol profile registered
+2017-03-21T13:20:06.129Z - success: protocol packages registered
+2017-03-21T13:20:06.129Z - success: protocol unpack registerred
+2017-03-21T13:20:06.130Z - success: protocol disable-commonjs registerred
+2017-03-21T13:20:06.908Z - normal: connected!
+2017-03-21T13:20:06.915Z - normal: Check project D:\workspace\web\work\games\hello
+2017-03-21T13:20:06.918Z - normal: Initializing Cocos2d
+2017-03-21T13:20:07.862Z - normal: Initializing Asset Database
+2017-03-21T13:20:07.981Z - success: protocol uuid registerred
+2017-03-21T13:20:07.981Z - success: protocol db registerred
+2017-03-21T13:20:07.982Z - success: protocol thumbnail registerred
+2017-03-21T13:20:07.982Z - normal: Loading editor/builtin packages
+2017-03-21T13:20:08.283Z - success: assets loaded
+2017-03-21T13:20:08.285Z - success: builder loaded
+2017-03-21T13:20:08.295Z - success: hierarchy loaded
+2017-03-21T13:20:08.300Z - success: inspector loaded
+2017-03-21T13:20:08.303Z - success: keystore loaded
+2017-03-21T13:20:08.307Z - success: node-library loaded
+2017-03-21T13:20:08.312Z - success: preferences loaded
+2017-03-21T13:20:08.337Z - success: project-importer loaded
+2017-03-21T13:20:08.340Z - success: project-settings loaded
+2017-03-21T13:20:08.342Z - success: ui-kit loaded
+2017-03-21T13:20:08.373Z - success: ui-grid loaded
+2017-03-21T13:20:08.377Z - success: scene loaded
+2017-03-21T13:20:08.379Z - success: sprite-editor loaded
+2017-03-21T13:20:08.563Z - success: store loaded
+2017-03-21T13:20:08.570Z - success: timeline loaded
+2017-03-21T13:20:08.570Z - normal: Loading builtin packages
+2017-03-21T13:20:08.579Z - success: anysdk loaded
+2017-03-21T13:20:08.587Z - success: asset-db-debugger loaded
+2017-03-21T13:20:08.589Z - success: code-editor loaded
+2017-03-21T13:20:08.595Z - success: color-picker loaded
+2017-03-21T13:20:08.600Z - success: console loaded
+2017-03-21T13:20:08.603Z - success: package-manager loaded
+2017-03-21T13:20:08.608Z - success: tester loaded
+2017-03-21T13:20:08.611Z - success: ui-kit-preview-extra loaded
+2017-03-21T13:20:08.613Z - success: ui-kit-preview loaded
+2017-03-21T13:20:08.618Z - success: ui-tree loaded
+2017-03-21T13:20:08.717Z - normal: Initializing project D:\workspace\web\work\games\hello
+2017-03-21T13:20:08.722Z - normal: Loading packages
+2017-03-21T13:20:08.734Z - normal: Watching packages
+2017-03-21T13:20:08.767Z - normal: Run Application
+2017-03-21T13:20:10.126Z - success: preview server running at http://localhost:7456
+2017-03-21T13:20:14.456Z - error: TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.extname (path.js:889:5)
+    at new CodeEditor (D:\software\cocos\resources\app.asar\builtin\code-editor\panel\editor.js:74:27)
+    at HTMLDocument.document.addEventListener (file:///D:/software/cocos/resources/app.asar/builtin/code-editor/panel/page.js:162:18)
+2017-03-21T13:20:16.269Z - normal: 1.4.0
+2017-03-21T13:20:29.352Z - error: TypeError: Cannot read property 'aceEditor' of null
+    at _confirmClose (file:///D:/software/cocos/resources/app.asar/builtin/code-editor/panel/page.js:19:28)
+    at window.addEventListener.event (file:///D:/software/cocos/resources/app.asar/builtin/code-editor/panel/page.js:172:15)
+2017-03-21T13:32:25.335Z - normal: Compiled project javascript file successfully
+2017-03-21T13:32:25.447Z - error: Property 'main.js.btns' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.preprocessAttrs (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:214:24)
+    at declareProperties (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:685:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:816:9)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?002:1:451
+2017-03-21T13:34:21.571Z - normal: Compiled project javascript file successfully
+2017-03-21T13:34:21.659Z - error: Unknown type of main.js.btns, property should be defined in 'properties' or 'ctor'
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.validateMethod (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:271:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:842:25)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?003:1:451
+2017-03-21T13:35:07.161Z - normal: Compiled project javascript file successfully
+2017-03-21T13:36:01.791Z - normal: Compiled project javascript file successfully
+2017-03-21T13:37:01.501Z - normal: Compiled project javascript file successfully
+2017-03-21T13:37:29.517Z - normal: Compiled project javascript file successfully
+2017-03-21T13:38:57.867Z - normal: Compiled project javascript file successfully
+2017-03-21T13:41:53.977Z - normal: Compiled project javascript file successfully
+2017-03-21T13:55:34.312Z - normal: Compiled project javascript file successfully
+2017-03-21T13:55:34.431Z - error: Unknown type of main.js.btns, property should be defined in 'properties' or 'ctor'
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.validateMethod (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:271:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:842:25)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?010:1:451
+2017-03-21T13:56:51.497Z - normal: Compiled project javascript file successfully
+2017-03-21T13:56:51.571Z - error: Property 'main.js.btns' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.preprocessAttrs (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:214:24)
+    at declareProperties (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:685:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:816:9)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?011:1:451
+2017-03-21T13:58:44.908Z - normal: Compiled project javascript file successfully
+2017-03-21T13:58:44.993Z - error: Property 'main.js.btns' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.preprocessAttrs (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:214:24)
+    at declareProperties (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:685:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:816:9)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?012:1:451
+2017-03-21T14:00:38.734Z - normal: Compiled project javascript file successfully
+2017-03-21T14:00:38.811Z - error: Property 'main.js.btns' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at Object.module.exports.preprocessAttrs (D:\software\cocos\resources\engine\cocos2d\core\platform\preprocess-class.js:214:24)
+    at declareProperties (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:685:20)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:816:9)
+    at Object.require.main.js (assets/js/main.js.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?013:1:451
+2017-03-21T14:02:13.248Z - normal: Compiled project javascript file successfully
+2017-03-21T14:03:30.094Z - normal: Compiled project javascript file successfully
+2017-03-21T14:03:55.970Z - normal: Compiled project javascript file successfully
+2017-03-21T14:04:22.196Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at eval (D:\software\cocos\resources\app.asar\editor\builtin\builder\panel\builder.js:1:13424)
+    at EventEmitter.<anonymous> (D:\software\cocos\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5549)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:201:7)
+2017-03-21T14:04:56.038Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\hello\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\hello\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\hello",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-03-21T14:04:56.041Z - normal: Building D:\workspace\web\work\games\hello
+2017-03-21T14:04:56.041Z - normal: Destination D:\workspace\web\work\games\hello\build\web-mobile
+2017-03-21T14:04:56.460Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\res/**/*
+2017-03-21T14:04:56.461Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\src/*/
+2017-03-21T14:04:59.275Z - normal: Compiled project javascript file successfully
+2017-03-21T14:04:59.276Z - normal: Start building assets
+2017-03-21T14:04:59.277Z - normal: Start spawn build-worker
+2017-03-21T14:05:00.480Z - normal: Finish spawn build-worker
+2017-03-21T14:05:00.480Z - normal: Start init build-worker
+2017-03-21T14:05:01.963Z - normal: 1.4.0
+2017-03-21T14:05:02.006Z - normal: Finish init build-worker
+2017-03-21T14:05:02.006Z - normal: Start build-assets in worker
+2017-03-21T14:05:02.499Z - normal: Finish build-assets in worker
+2017-03-21T14:05:02.505Z - normal: Finish building assets
+2017-03-21T14:05:02.557Z - normal: Start building raw assets
+2017-03-21T14:05:02.558Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T14:05:02.559Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T14:05:02.559Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T14:05:02.560Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T14:05:02.560Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T14:05:02.560Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T14:05:02.560Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T14:05:02.560Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T14:05:02.561Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T14:05:02.561Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T14:05:02.561Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T14:05:02.561Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T14:05:02.561Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T14:05:02.562Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T14:05:02.562Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T14:05:02.597Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T14:05:02.600Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T14:05:02.600Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T14:05:02.601Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T14:05:02.601Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T14:05:02.601Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T14:05:02.601Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T14:05:02.601Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T14:05:02.602Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T14:05:02.602Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T14:05:02.603Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T14:05:02.603Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T14:05:02.603Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T14:05:02.603Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T14:05:02.607Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T14:05:02.609Z - normal: Finish building raw assets
+2017-03-21T14:05:02.622Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-03-21T14:05:02.635Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-03-21T14:05:02.643Z - normal: Built to "D:\workspace\web\work\games\hello\build\web-mobile" successfully
+2017-03-21T14:14:35.899Z - normal: Compiled project javascript file successfully
+2017-03-21T14:15:57.389Z - normal: Compiled project javascript file successfully
+2017-03-21T14:29:08.099Z - normal: Compiled project javascript file successfully
+2017-03-21T14:29:23.457Z - normal: Compiled project javascript file successfully
+2017-03-21T14:37:26.691Z - normal: Compiled project javascript file successfully
+2017-03-21T14:41:09.154Z - normal: Compiled project javascript file successfully
+2017-03-21T14:42:36.740Z - normal: Compiled project javascript file successfully
+2017-03-21T14:45:39.230Z - normal: Compiled project javascript file successfully
+2017-03-21T14:48:29.547Z - normal: Compiled project javascript file successfully
+2017-03-21T14:52:02.252Z - normal: Compiled project javascript file successfully
+2017-03-21T14:52:54.817Z - normal: Compiled project javascript file successfully
+2017-03-21T14:58:08.857Z - normal: Compiled project javascript file successfully
+2017-03-21T14:58:08.934Z - error: Do not set default value to non-empty object, unless the object defines its own 'clone' function. Set default value of main.stakes to null or {}, and initialize in 'onLoad' or 'ctor' please. (just like 'this.stakes = {foo: bar};')
+    at Object.cc.errorID (D:\software\cocos\resources\engine\CCDebugger.js:332:22)
+    at defineProp (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:691:17)
+    at Object.CCClass [as Class] (D:\software\cocos\resources\engine\cocos2d\core\platform\CCClass.js:816:9)
+    at Object.require.main (assets/js/main.js:1)
+    at s (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../software/cocos/resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///D:/workspace/web/work/games/hello/library/bundle.project.js?028:1:451
+2017-03-21T14:59:01.519Z - normal: Compiled project javascript file successfully
+2017-03-21T14:59:54.316Z - normal: Compiled project javascript file successfully
+2017-03-21T15:00:30.757Z - normal: Compiled project javascript file successfully
+2017-03-21T15:01:29.313Z - normal: Compiled project javascript file successfully
+2017-03-21T15:03:43.380Z - normal: Compiled project javascript file successfully
+2017-03-21T15:05:40.357Z - normal: Compiled project javascript file successfully
+2017-03-21T15:06:19.319Z - normal: Compiled project javascript file successfully
+2017-03-21T15:08:28.699Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\hello\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\hello\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\hello",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-03-21T15:08:28.704Z - normal: Building D:\workspace\web\work\games\hello
+2017-03-21T15:08:28.704Z - normal: Destination D:\workspace\web\work\games\hello\build\web-mobile
+2017-03-21T15:08:28.708Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\res/**/*
+2017-03-21T15:08:28.710Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\src/*/
+2017-03-21T15:08:31.482Z - normal: Compiled project javascript file successfully
+2017-03-21T15:08:31.483Z - normal: Start building assets
+2017-03-21T15:08:31.484Z - normal: Start spawn build-worker
+2017-03-21T15:08:32.688Z - normal: Finish spawn build-worker
+2017-03-21T15:08:32.688Z - normal: Start init build-worker
+2017-03-21T15:08:34.254Z - normal: 1.4.0
+2017-03-21T15:08:34.302Z - normal: Finish init build-worker
+2017-03-21T15:08:34.302Z - normal: Start build-assets in worker
+2017-03-21T15:08:34.784Z - normal: Finish build-assets in worker
+2017-03-21T15:08:34.791Z - normal: Finish building assets
+2017-03-21T15:08:34.854Z - normal: Start building raw assets
+2017-03-21T15:08:34.855Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:08:34.856Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:08:34.856Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:08:34.857Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:08:34.857Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:08:34.857Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:08:34.857Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:08:34.858Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:08:34.858Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:08:34.858Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:08:34.858Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:08:34.858Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:08:34.859Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:08:34.859Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:08:34.859Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:08:34.890Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:08:34.893Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:08:34.894Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:08:34.897Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:08:34.897Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:08:34.897Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:08:34.897Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:08:34.898Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:08:34.898Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:08:34.898Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:08:34.898Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:08:34.898Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:08:34.899Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:08:34.899Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:08:34.901Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:08:34.901Z - normal: Finish building raw assets
+2017-03-21T15:08:34.919Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-03-21T15:08:34.927Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-03-21T15:08:34.939Z - normal: Built to "D:\workspace\web\work\games\hello\build\web-mobile" successfully
+2017-03-21T15:09:46.294Z - normal: Compiled project javascript file successfully
+2017-03-21T15:09:50.943Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\hello\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\hello\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\hello",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-03-21T15:09:50.947Z - normal: Building D:\workspace\web\work\games\hello
+2017-03-21T15:09:50.948Z - normal: Destination D:\workspace\web\work\games\hello\build\web-mobile
+2017-03-21T15:09:50.952Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\res/**/*
+2017-03-21T15:09:50.953Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\src/*/
+2017-03-21T15:09:53.684Z - normal: Compiled project javascript file successfully
+2017-03-21T15:09:53.685Z - normal: Start building assets
+2017-03-21T15:09:53.686Z - normal: Start spawn build-worker
+2017-03-21T15:09:54.920Z - normal: Finish spawn build-worker
+2017-03-21T15:09:54.920Z - normal: Start init build-worker
+2017-03-21T15:09:56.482Z - normal: 1.4.0
+2017-03-21T15:09:56.531Z - normal: Finish init build-worker
+2017-03-21T15:09:56.531Z - normal: Start build-assets in worker
+2017-03-21T15:09:56.999Z - normal: Finish build-assets in worker
+2017-03-21T15:09:57.009Z - normal: Finish building assets
+2017-03-21T15:09:57.051Z - normal: Start building raw assets
+2017-03-21T15:09:57.052Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:09:57.053Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:09:57.054Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:09:57.054Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:09:57.054Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:09:57.055Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:09:57.055Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:09:57.055Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:09:57.055Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:09:57.056Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:09:57.056Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:09:57.056Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:09:57.056Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:09:57.057Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:09:57.058Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:09:57.104Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:09:57.111Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:09:57.111Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:09:57.111Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:09:57.111Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:09:57.111Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:09:57.112Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:09:57.112Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:09:57.112Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:09:57.112Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:09:57.113Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:09:57.113Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:09:57.113Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:09:57.114Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:09:57.116Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:09:57.117Z - normal: Finish building raw assets
+2017-03-21T15:09:57.130Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-03-21T15:09:57.137Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-03-21T15:09:57.148Z - normal: Built to "D:\workspace\web\work\games\hello\build\web-mobile" successfully
+2017-03-21T15:16:43.408Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\hello\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\hello\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\hello",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-03-21T15:16:43.413Z - normal: Building D:\workspace\web\work\games\hello
+2017-03-21T15:16:43.414Z - normal: Destination D:\workspace\web\work\games\hello\build\web-mobile
+2017-03-21T15:16:43.417Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\res/**/*
+2017-03-21T15:16:43.418Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\src/*/
+2017-03-21T15:16:46.299Z - normal: Compiled project javascript file successfully
+2017-03-21T15:16:46.300Z - normal: Start building assets
+2017-03-21T15:16:46.300Z - normal: Start spawn build-worker
+2017-03-21T15:16:47.608Z - normal: Finish spawn build-worker
+2017-03-21T15:16:47.608Z - normal: Start init build-worker
+2017-03-21T15:16:49.260Z - normal: 1.4.0
+2017-03-21T15:16:49.309Z - normal: Finish init build-worker
+2017-03-21T15:16:49.309Z - normal: Start build-assets in worker
+2017-03-21T15:16:49.824Z - normal: Finish build-assets in worker
+2017-03-21T15:16:49.838Z - normal: Finish building assets
+2017-03-21T15:16:49.893Z - normal: Start building raw assets
+2017-03-21T15:16:49.894Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:16:49.895Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:16:49.895Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:16:49.896Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:16:49.896Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:16:49.896Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:16:49.896Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:16:49.897Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:16:49.897Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:16:49.897Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:16:49.897Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:16:49.898Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:16:49.898Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:16:49.898Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:16:49.899Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:16:49.948Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-3.png
+2017-03-21T15:16:49.954Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\left.png
+2017-03-21T15:16:49.955Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\right.png
+2017-03-21T15:16:49.955Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\menu.png
+2017-03-21T15:16:49.955Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\badge.png
+2017-03-21T15:16:49.955Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-normal.png
+2017-03-21T15:16:49.956Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\score-bkg.png
+2017-03-21T15:16:49.956Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-1.png
+2017-03-21T15:16:49.956Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\current-stake-bkg.png
+2017-03-21T15:16:49.957Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\cat-2.png
+2017-03-21T15:16:49.957Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\btn-start.png
+2017-03-21T15:16:49.957Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\prize.png
+2017-03-21T15:16:49.958Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\arm.png
+2017-03-21T15:16:49.958Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\add.png
+2017-03-21T15:16:49.961Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\image\game-bkg.png
+2017-03-21T15:16:49.961Z - normal: Finish building raw assets
+2017-03-21T15:16:49.978Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-03-21T15:16:49.988Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-03-21T15:16:50.019Z - normal: Built to "D:\workspace\web\work\games\hello\build\web-mobile" successfully
+2017-03-21T15:26:52.093Z - normal: Compiled project javascript file successfully
+2017-03-21T15:34:19.889Z - normal: Load worker timeout, reload worker.
+2017-03-21T15:34:21.874Z - normal: Compiled project javascript file successfully
+2017-03-21T15:35:37.934Z - normal: Compiled project javascript file successfully
+2017-03-21T15:38:37.294Z - normal: Compiled project javascript file successfully
+2017-03-21T15:39:17.379Z - normal: Compiled project javascript file successfully
+2017-03-21T15:39:33.995Z - normal: Compiled project javascript file successfully
+2017-03-21T15:40:23.594Z - normal: Compiled project javascript file successfully
+2017-03-21T15:41:46.171Z - normal: Compiled project javascript file successfully
+2017-03-21T15:42:41.048Z - normal: Compiled project javascript file successfully
+2017-03-21T15:44:38.027Z - normal: Compiled project javascript file successfully
+2017-03-21T15:44:52.349Z - normal: Compiled project javascript file successfully
+2017-03-21T15:47:29.259Z - normal: Compiled project javascript file successfully
+2017-03-21T15:50:18.173Z - normal: Compiled project javascript file successfully
+2017-03-21T15:53:51.083Z - normal: Compiled project javascript file successfully
+2017-03-21T15:55:31.278Z - normal: Compiled project javascript file successfully
+2017-03-21T15:56:40.293Z - normal: Compiled project javascript file successfully
+2017-03-21T15:57:35.433Z - normal: Compiled project javascript file successfully
+2017-03-21T15:57:55.151Z - normal: Compiled project javascript file successfully
+2017-03-21T15:58:23.593Z - normal: Compiled project javascript file successfully
+2017-03-21T15:59:50.415Z - normal: Compiled project javascript file successfully
+2017-03-21T16:00:10.327Z - normal: Compiled project javascript file successfully
+2017-03-21T16:00:41.974Z - normal: Compiled project javascript file successfully
+2017-03-21T16:00:42.042Z - warn: The 'type' attribute of 'main.spirtes' is undefined when loading script
+2017-03-21T16:00:55.069Z - normal: Compiled project javascript file successfully
+2017-03-21T16:01:22.391Z - normal: Compiled project javascript file successfully
+2017-03-21T16:01:51.006Z - normal: Compiled project javascript file successfully
+2017-03-21T16:02:56.901Z - normal: Compiled project javascript file successfully
+2017-03-21T16:03:10.590Z - normal: Compiled project javascript file successfully
+2017-03-21T16:03:10.661Z - warn: The 'type' attribute of 'main.spirteFrames' is undefined when loading script
+2017-03-21T16:03:14.378Z - error: TypeError: Cannot read property 'value' of null
+    at _buildProp (D:\software\cocos\resources\app.asar\editor\builtin\inspector\utils\utils.js:1:131)
+    at _buildProp (D:\software\cocos\resources\app.asar\editor\builtin\inspector\utils\utils.js:1:1318)
+    at _buildComp (D:\software\cocos\resources\app.asar\editor\builtin\inspector\utils\utils.js:1:1818)
+    at Object.buildNode (D:\software\cocos\resources\app.asar\editor\builtin\inspector\utils\utils.js:1:2263)
+    at ui-panel-frame._handleQueryNode (D:\software\cocos\resources\app.asar\editor\builtin\inspector\panel\index.js:1:10831)
+    at eval (D:\software\cocos\resources\app.asar\editor\builtin\inspector\panel\index.js:1:10453)
+    at EventEmitter.<anonymous> (D:\software\cocos\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:5549)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:201:7)
+2017-03-21T16:03:26.669Z - normal: Compiled project javascript file successfully
+2017-03-21T16:03:26.742Z - warn: The 'type' attribute of 'main.spirtes' is undefined when loading script
+2017-03-21T16:03:55.346Z - normal: Compiled project javascript file successfully
+2017-03-21T16:03:55.413Z - warn: The 'type' attribute of 'main.spirteFrames' is undefined when loading script
+2017-03-21T16:04:28.791Z - normal: Compiled project javascript file successfully
+2017-03-21T16:04:47.119Z - normal: Compiled project javascript file successfully
+2017-03-21T16:05:01.840Z - normal: Compiled project javascript file successfully
+2017-03-21T16:05:01.918Z - warn: The 'type' attribute of 'main.spirteFrames' is undefined when loading script
+2017-03-21T16:05:22.843Z - normal: Compiled project javascript file successfully
+2017-03-21T16:05:22.912Z - warn: The 'type' attribute of 'main.spirtes' is undefined when loading script
+2017-03-21T16:05:39.611Z - normal: Compiled project javascript file successfully
+2017-03-21T16:05:58.890Z - normal: Compiled project javascript file successfully
+2017-03-21T16:06:32.070Z - normal: Compiled project javascript file successfully
+2017-03-21T16:08:38.868Z - normal: Compiled project javascript file successfully
+2017-03-21T16:09:45.733Z - normal: Compiled project javascript file successfully
+2017-03-21T16:10:34.766Z - normal: Compiled project javascript file successfully
+2017-03-21T16:10:34.849Z - warn: The 'type' attribute of 'main.cats' is undefined when loading script
+2017-03-21T16:10:47.485Z - normal: Compiled project javascript file successfully
+2017-03-21T16:12:55.053Z - normal: Compiled project javascript file successfully
+2017-03-21T16:15:19.367Z - normal: Compiled project javascript file successfully
+2017-03-21T16:17:08.983Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\hello\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\hello\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\hello",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-03-21T16:17:08.987Z - normal: Building D:\workspace\web\work\games\hello
+2017-03-21T16:17:08.988Z - normal: Destination D:\workspace\web\work\games\hello\build\web-mobile
+2017-03-21T16:17:08.990Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\res/**/*
+2017-03-21T16:17:08.994Z - normal: Delete D:\workspace\web\work\games\hello\build\web-mobile\src/*/
+2017-03-21T16:17:19.040Z - normal: Load worker timeout, reload worker.
+2017-03-21T16:17:21.418Z - normal: Compiled project javascript file successfully
+2017-03-21T16:17:21.418Z - normal: Start building assets
+2017-03-21T16:17:21.419Z - normal: Start spawn build-worker
+2017-03-21T16:17:22.571Z - normal: Finish spawn build-worker
+2017-03-21T16:17:22.571Z - normal: Start init build-worker
+2017-03-21T16:17:24.070Z - normal: 1.4.0
+2017-03-21T16:17:24.129Z - normal: Finish init build-worker
+2017-03-21T16:17:24.130Z - normal: Start build-assets in worker
+2017-03-21T16:17:24.698Z - normal: Finish build-assets in worker
+2017-03-21T16:17:24.705Z - normal: Finish building assets
+2017-03-21T16:17:24.760Z - normal: Start building raw assets
+2017-03-21T16:17:24.761Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-3.png
+2017-03-21T16:17:24.762Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\left.png
+2017-03-21T16:17:24.763Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\right.png
+2017-03-21T16:17:24.763Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\menu.png
+2017-03-21T16:17:24.763Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\badge.png
+2017-03-21T16:17:24.763Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\game-bkg.png
+2017-03-21T16:17:24.764Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\btn-press.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-press.png
+2017-03-21T16:17:24.764Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\score-bkg.png
+2017-03-21T16:17:24.764Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-normal.png
+2017-03-21T16:17:24.764Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-1.png
+2017-03-21T16:17:24.765Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-start.png
+2017-03-21T16:17:24.765Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\current-stake-bkg.png
+2017-03-21T16:17:24.765Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-2.png
+2017-03-21T16:17:24.765Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\prize.png
+2017-03-21T16:17:24.765Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\arm.png
+2017-03-21T16:17:24.766Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\hello\assets\resources\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\add.png
+2017-03-21T16:17:24.815Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\left.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\left.png
+2017-03-21T16:17:24.833Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\cat-3.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-3.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\right.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\right.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\menu.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\menu.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\badge.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\badge.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\btn-press.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-press.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\score-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\score-bkg.png
+2017-03-21T16:17:24.834Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\cat-1.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-1.png
+2017-03-21T16:17:24.835Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\btn-start.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-start.png
+2017-03-21T16:17:24.835Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\btn-normal.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\btn-normal.png
+2017-03-21T16:17:24.835Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\current-stake-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\current-stake-bkg.png
+2017-03-21T16:17:24.835Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\cat-2.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\cat-2.png
+2017-03-21T16:17:24.835Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\prize.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\prize.png
+2017-03-21T16:17:24.836Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\arm.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\arm.png
+2017-03-21T16:17:24.836Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\add.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\add.png
+2017-03-21T16:17:24.837Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\hello\assets\resources\image\game-bkg.png to D:\workspace\web\work\games\hello\build\web-mobile\res\raw-assets\resources\image\game-bkg.png
+2017-03-21T16:17:24.838Z - normal: Finish building raw assets
+2017-03-21T16:17:24.847Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-03-21T16:17:24.852Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-03-21T16:17:24.866Z - normal: Built to "D:\workspace\web\work\games\hello\build\web-mobile" successfully
+2017-03-21T16:20:13.055Z - info: shutdown preview server
