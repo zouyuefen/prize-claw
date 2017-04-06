@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rule-bkg",
+    "texture": "55a3c01d-410a-4cc5-bc98-d99d75e7d738",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      568,
+      722
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      568,
+      722
+    ]
+  }
+}

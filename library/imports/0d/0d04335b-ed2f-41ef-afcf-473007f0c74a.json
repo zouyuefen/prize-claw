@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "menu",
+    "name": "rule",
     "texture": "270d095a-bc61-4ce7-9d8d-f1c3d176b6ee",
     "atlas": "",
     "rect": [

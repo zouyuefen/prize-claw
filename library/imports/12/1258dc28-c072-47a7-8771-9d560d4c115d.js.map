@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "btn",
+    "default",
+    "type",
+    "Node",
+    "mask",
+    "bkg",
+    "onLoad",
+    "init",
+    "listen",
+    "node",
+    "active",
+    "show",
+    "opacity",
+    "runAction",
+    "fadeIn",
+    "on",
+    "EventType",
+    "TOUCH_START",
+    "event",
+    "stopPropagation",
+    "hide",
+    "sequence",
+    "fadeOut",
+    "callFunc"
+  ],
+  "mappings": ";;;;;kBAAeA,GAAGC,KAAH,CAAS;AACpBC,aAASF,GAAGG,SADQ;AAEpBC,gBAAY;AACRC,aAAK;AACDC,qBAAS,IADR;AAEDC,kBAAMP,GAAGQ;AAFR,SADG;AAKRC,cAAM;AACFH,qBAAS,IADP;AAEFC,kBAAMP,GAAGQ;AAFP,SALE;AASRE,aAAK;AACDJ,qBAAS,IADR;AAEDC,kBAAMP,GAAGQ;AAFR;AATG,KAFQ;;AAiBpBG,UAjBoB,oBAiBX;AACL,aAAKC,IAAL;AACA,aAAKC,MAAL;AACH,KApBmB;AAsBpBD,QAtBoB,kBAsBb;AACH,aAAKE,IAAL,CAAUC,MAAV,GAAmB,KAAnB;AACH,KAxBmB;AA0BpBC,QA1BoB,kBA0Bb;AACH,YAAI,KAAKF,IAAL,CAAUC,MAAd,EAAsB,KAAKD,IAAL,CAAUG,OAAV,GAAoB,CAApB,CAAtB,KACK;AACD,iBAAKH,IAAL,CAAUC,MAAV,GAAmB,IAAnB;AACA,iBAAKD,IAAL,CAAUG,OAAV,GAAoB,CAApB;AACH;AACD,aAAKH,IAAL,CAAUI,SAAV,CAAoBlB,GAAGmB,MAAH,CAAU,EAAV,CAApB;AACH,KAjCmB;AAmCpBN,UAnCoB,oBAmCX;AAAA;;AACL,aAAKJ,IAAL,CAAUW,EAAV,CACIpB,GAAGQ,IAAH,CAAQa,SAAR,CAAkBC,WADtB,EAEI,iBAAS;AACLC,kBAAMC,eAAN;AACH,SAJL;;AAOA,aAAKnB,GAAL,CAASe,EAAT,CACIpB,GAAGQ,IAAH,CAAQa,SAAR,CAAkBC,WADtB,EAEI,YAAM;AACF,kBAAKG,IAAL;AACH,SAJL;AAMH,KAjDmB;AAmDpBA,QAnDoB,kBAmDb;AAAA;;AACH,aAAKX,IAAL,CAAUI,SAAV,CAAoBlB,GAAG0B,QAAH,CAChB1B,GAAG2B,OAAH,CAAW,EAAX,CADgB,EAEhB3B,GAAG4B,QAAH,CAAY,YAAM;AACd,mBAAKd,IAAL,CAAUC,MAAV,GAAmB,KAAnB;AACH,SAFD,CAFgB,CAApB;AAMH;AA1DmB,CAAT,C",
+  "file": "unknown",
+  "sourcesContent": [
+    "export default cc.Class({\r\n    extends: cc.Component,\r\n    properties: {\r\n        btn: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        mask: {\r\n            default: null,\r\n            type: cc.Node\r\n        },\r\n        bkg: {\r\n            default: null,\r\n            type: cc.Node\r\n        }\r\n    },\r\n\r\n    onLoad() {\r\n        this.init()\r\n        this.listen()\r\n    },\r\n\r\n    init() {\r\n        this.node.active = false\r\n    },\r\n\r\n    show() {\r\n        if (this.node.active) this.node.opacity = 0\r\n        else {\r\n            this.node.active = true\r\n            this.node.opacity = 0\r\n        }\r\n        this.node.runAction(cc.fadeIn(.5))\r\n    },\r\n\r\n    listen() {\r\n        this.mask.on(\r\n            cc.Node.EventType.TOUCH_START,\r\n            event => {\r\n                event.stopPropagation()\r\n            }\r\n        )\r\n\r\n        this.btn.on(\r\n            cc.Node.EventType.TOUCH_START,\r\n            () => {\r\n                this.hide()\r\n            }\r\n        )\r\n    },\r\n\r\n    hide() {\r\n        this.node.runAction(cc.sequence(\r\n            cc.fadeOut(.5),\r\n            cc.callFunc(() => {\r\n                this.node.active = false\r\n            })\r\n        ))\r\n    }\r\n\r\n})\r\n"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gold-left",
+    "texture": "4f42aaa4-bb57-4eef-b922-6f6eba5664ad",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      90,
+      117
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      90,
+      117
+    ]
+  }
+}

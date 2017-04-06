@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "goods-line-through",
+    "texture": "7f3de377-abd1-4223-b7c8-882937b68caa",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      128,
+      4
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      4
+    ]
+  }
+}

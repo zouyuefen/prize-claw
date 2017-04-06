@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
+      "x": 302,
+      "y": 206,
       "width": 1382,
       "height": 784,
       "layout": {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 332.984375,
+                "height": 353.984375,
                 "type": "panel",
-                "width": 221
+                "width": 422
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 321,
+                "height": 300,
                 "type": "panel",
-                "width": 221
+                "width": 422
               }
             ],
             "height": 657,
             "type": "dock-v",
-            "width": 221
+            "width": 422
           },
           {
             "active": 0,
@@ -43,21 +43,13 @@
             ],
             "height": 657,
             "type": "panel",
-            "width": 622
+            "width": 628
           },
           {
             "active": 0,
             "children": [
+              "inspector",
               "node-library"
-            ],
-            "height": 657,
-            "type": "panel",
-            "width": 204
-          },
-          {
-            "active": 0,
-            "children": [
-              "inspector"
             ],
             "height": 657,
             "type": "panel",
@@ -73,7 +65,8 @@
         "scene",
         "node-library"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "code-editor": {
@@ -95,16 +88,28 @@
       "height": 564
     },
     "builder": {
-      "x": 425,
-      "y": 5,
+      "x": 435,
+      "y": 96,
       "width": 516,
-      "height": 738
+      "height": 620
     },
     "console": {
       "x": 475,
       "y": 205,
       "width": 668,
       "height": 432
+    },
+    "sprite-editor": {
+      "x": 334,
+      "y": 87,
+      "width": 742,
+      "height": 572
+    },
+    "inspector": {
+      "x": 736,
+      "y": 156,
+      "width": 320,
+      "height": 438
     }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "onLoad",
+    "init",
+    "main",
+    "director",
+    "getScene",
+    "getChildByName",
+    "getComponent",
+    "onCollisionEnter",
+    "other",
+    "self",
+    "game",
+    "claw",
+    "state",
+    "node",
+    "name",
+    "catched",
+    "checkLeft",
+    "checkRight",
+    "console",
+    "error",
+    "gift",
+    "onCollisionStay",
+    "pos",
+    "convertToWorldSpace",
+    "delta",
+    "x"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;AAELC,UAFK,oBAEI;AACL,aAAKC,IAAL;AACH,KAJI;AAMLA,QANK,kBAME;AACH,aAAKC,IAAL,GAAYN,GAAGO,QAAH,CAAYC,QAAZ,GACPC,cADO,CACQ,MADR,EACgBC,YADhB,CAC6B,MAD7B,CAAZ;AAEH,KATI;AAULC,oBAVK,4BAUYC,KAVZ,EAUmBC,IAVnB,EAUyB;AAC1B;;;;AAIA,YAAI,KAAKP,IAAL,CAAUQ,IAAV,CAAeC,IAAf,CAAoBC,KAApB,KAA8B,MAAlC,EAA0C;AAC1C,YAAIH,KAAKI,IAAL,CAAUC,IAAV,KAAmB,MAAvB,EAA+B;AAC3B,iBAAKZ,IAAL,CAAUQ,IAAV,CAAeC,IAAf,CAAoBI,OAApB,GAA8B,KAAKC,SAAL,CAAeR,KAAf,EAAsBC,IAAtB,CAA9B;AACH,SAFD,MAEO,IAAIA,KAAKI,IAAL,CAAUC,IAAV,KAAmB,OAAvB,EAAgC;AACnC,iBAAKZ,IAAL,CAAUQ,IAAV,CAAeC,IAAf,CAAoBI,OAApB,GAA8B,KAAKE,UAAL,CAAgBT,KAAhB,EAAuBC,IAAvB,CAA9B;AACH,SAFM,MAEAS,QAAQC,KAAR,CAAc,UAAd;;AAEP,YAAI,KAAKjB,IAAL,CAAUQ,IAAV,CAAeC,IAAf,CAAoBI,OAAxB,EAAiC;AAC7B,iBAAKb,IAAL,CAAUQ,IAAV,CAAeC,IAAf,CAAoBS,IAApB,GAA2BZ,MAAMK,IAAjC;AACH;AACJ,KAzBI;AA0BLQ,mBA1BK,2BA0BWb,KA1BX,EA0BkBC,IA1BlB,EA0BwB,CAE5B,CA5BI;AA6BLO,aA7BK,qBA6BKI,IA7BL,EA6BWT,IA7BX,EA6BiB;AAClB;AACA,YAAMW,MAAM;AACRF,kBAAMA,KAAKP,IAAL,CAAUU,mBAAV,CAA8B,CAA9B,EAAiC,CAAjC,CADE;AAERZ,kBAAMA,KAAKE,IAAL,CAAUU,mBAAV,CAA8B,CAA9B,EAAiC,CAAjC;AAFE,SAAZ;;AAKA,YAAMC,QAAQF,IAAIF,IAAJ,CAASK,CAAT,GAAaH,IAAIX,IAAJ,CAASc,CAApC;;AAEA,YAAID,QAAQ,EAAZ,EAAgB,OAAO,IAAP;AAChB,eAAO,KAAP;AACH,KAxCI;AAyCLP,cAzCK,sBAyCMG,IAzCN,EAyCYT,IAzCZ,EAyCkB;AACnB;AACA,YAAMW,MAAM;AACRF,kBAAMA,KAAKP,IAAL,CAAUU,mBAAV,CAA8B,CAA9B,EAAiC,CAAjC,CADE;AAERZ,kBAAMA,KAAKE,IAAL,CAAUU,mBAAV,CAA8B,CAA9B,EAAiC,CAAjC;AAFE,SAAZ;;AAKA,YAAMC,QAAQF,IAAIX,IAAJ,CAASc,CAAT,GAAaH,IAAIF,IAAJ,CAASK,CAApC;;AAEA,YAAID,QAAQ,EAAZ,EAAgB,OAAO,IAAP;;AAEhB,eAAO,KAAP;AACH;AArDI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n    onLoad() {\r\n        this.init()\r\n    },\r\n\r\n    init() {\r\n        this.main = cc.director.getScene()\r\n            .getChildByName('main').getComponent('main')\r\n    },\r\n    onCollisionEnter(other, self) {\r\n        /* 检测爪子状态\r\n        * 非 grab 状态\r\n        * 不作碰撞处理\r\n        */\r\n        if (this.main.game.claw.state !== 'grab') return\r\n        if (self.node.name === 'left') {\r\n            this.main.game.claw.catched = this.checkLeft(other, self)\r\n        } else if (self.node.name === 'right') {\r\n            this.main.game.claw.catched = this.checkRight(other, self)\r\n        } else console.error('请检查组件名设置')\r\n\r\n        if (this.main.game.claw.catched) {\r\n            this.main.game.claw.gift = other.node\r\n        }\r\n    },\r\n    onCollisionStay(other, self) {\r\n\r\n    },\r\n    checkLeft(gift, claw) {\r\n        // 转成世界坐标\r\n        const pos = {\r\n            gift: gift.node.convertToWorldSpace(0, 0),\r\n            claw: claw.node.convertToWorldSpace(0, 0)\r\n        }\r\n\r\n        const delta = pos.gift.x - pos.claw.x\r\n\r\n        if (delta > 20) return true\r\n        return false\r\n    },\r\n    checkRight(gift, claw) {\r\n        // 转成世界坐标\r\n        const pos = {\r\n            gift: gift.node.convertToWorldSpace(0, 0),\r\n            claw: claw.node.convertToWorldSpace(0, 0)\r\n        }\r\n\r\n        const delta = pos.claw.x - pos.gift.x\r\n\r\n        if (delta > 10) return true\r\n\r\n        return false\r\n    }\r\n})\r\n"
+  ]
+}

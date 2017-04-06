@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gold-rope",
+    "texture": "18050f8e-6856-462f-9524-6147a28ca7eb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      8,
+      280
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      8,
+      280
+    ]
+  }
+}

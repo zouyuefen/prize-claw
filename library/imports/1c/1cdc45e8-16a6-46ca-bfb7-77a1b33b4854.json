@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pit-around",
+    "texture": "8d348327-d440-4943-8e80-35be67e71e99",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      264,
+      134
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      264,
+      134
+    ]
+  }
+}

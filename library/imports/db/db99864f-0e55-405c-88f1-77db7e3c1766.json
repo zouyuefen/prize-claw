@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "goods-item-btn-bkg",
+    "texture": "9509076f-f4b6-46a9-bfa3-e29930ed9bc7",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      190,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      192,
+      86
+    ]
+  }
+}

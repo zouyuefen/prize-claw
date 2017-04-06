@@ -1,6 +1,29 @@
 {
   "user": {
-    "classify": [],
+    "classify": [
+      {
+        "name": "Default",
+        "prefab": [
+          {
+            "name": "stake-btn",
+            "uuid": "400671a6-30d6-47fa-b9bf-b87561943693"
+          },
+          {
+            "name": "gift-1",
+            "uuid": "0898f5c0-54aa-4615-aadb-1bc659e8db07"
+          },
+          {
+            "name": "goods-item",
+            "uuid": "8adc5231-4ad1-468d-80c8-bbab6f2eb221"
+          },
+          {
+            "name": "record-item",
+            "uuid": "f988dd7b-a700-48f7-9ab6-ecf1fb924cee"
+          }
+        ],
+        "title": ""
+      }
+    ],
     "modify": true,
     "name": "user",
     "title": "自定义控件"

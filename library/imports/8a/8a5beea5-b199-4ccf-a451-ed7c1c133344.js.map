@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": ";;;qBAAe;AACX,SAAK,EAAA,iBAAG;AACJ,eAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAA;KACvB;;AAED,SAAK,EAAA,iBAAG,EAEP;CACJ",
+  "file": "unknown",
+  "sourcesContent": [
+    "export default {\r\n    unuse() {\r\n        console.log('unuse')\r\n    },\r\n\r\n    reuse() {\r\n\r\n    }\r\n}\r\n"
+  ]
+}

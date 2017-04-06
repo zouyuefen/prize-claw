@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn-bkg-unable",
+    "texture": "ced593da-3715-4f80-ac8b-a4d20940a9c0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      240,
+      94
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      240,
+      94
+    ]
+  }
+}

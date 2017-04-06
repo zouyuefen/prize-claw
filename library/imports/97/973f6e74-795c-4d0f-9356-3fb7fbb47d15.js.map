@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "onLoad",
+    "main",
+    "director",
+    "getScene",
+    "getChildByName",
+    "getComponent",
+    "console",
+    "log",
+    "name",
+    "onEnable",
+    "listen",
+    "node",
+    "on",
+    "Node",
+    "EventType",
+    "TOUCH_START",
+    "scale",
+    "TOUCH_END",
+    "api",
+    "purchase",
+    "__goodsId",
+    "then",
+    "res"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,UAHK,oBAGI;AACL;;;;AAIA,aAAKC,IAAL,GAAYL,GAAGM,QAAH,CAAYC,QAAZ,GACPC,cADO,CACQ,MADR,EACgBC,YADhB,CAC6B,MAD7B,CAAZ;;AAGA;;AAEAC,gBAAQC,GAAR,CAAY,KAAKC,IAAjB;AAEH,KAfI;AAiBLC,YAjBK,sBAiBM;AACPH,gBAAQC,GAAR,CAAY,KAAKC,IAAjB;AACH,KAnBI;AAqBLE,UArBK,oBAqBI;AAAA;;AACL,aAAKC,IAAL,CAAUC,EAAV,CACIhB,GAAGiB,IAAH,CAAQC,SAAR,CAAkBC,WADtB,EAEI,YAAM;AACF,kBAAKJ,IAAL,CAAUK,KAAV,GAAkB,GAAlB;AACH,SAJL;AAMA,aAAKL,IAAL,CAAUC,EAAV,CACIhB,GAAGiB,IAAH,CAAQC,SAAR,CAAkBG,SADtB,EAEI,YAAM;AACF,kBAAKN,IAAL,CAAUK,KAAV,GAAkB,CAAlB;AACA,kBAAKf,IAAL,CAAUiB,GAAV,CAAcC,QAAd,CAAuB,MAAKR,IAAL,CAAUS,SAAjC,EACCC,IADD,CACM,eAAO;AACTf,wBAAQC,GAAR,CAAYe,GAAZ;AACH,aAHD;AAIH,SARL;AAUH;AAtCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    onLoad() {\r\n        /*\r\n        * 初始化时\r\n        * 获取 main 组件\r\n        */\r\n        this.main = cc.director.getScene()\r\n            .getChildByName('main').getComponent('main')\r\n\r\n        // this.listen()\r\n\r\n        console.log(this.name)\r\n\r\n    },\r\n\r\n    onEnable() {\r\n        console.log(this.name)\r\n    },\r\n\r\n    listen() {\r\n        this.node.on(\r\n            cc.Node.EventType.TOUCH_START,\r\n            () => {\r\n                this.node.scale = .95\r\n            }\r\n        )\r\n        this.node.on(\r\n            cc.Node.EventType.TOUCH_END,\r\n            () => {\r\n                this.node.scale = 1\r\n                this.main.api.purchase(this.node.__goodsId)\r\n                .then(res => {\r\n                    console.log(res)\r\n                })\r\n            }\r\n        )\r\n    }\r\n})\r\n"
+  ]
+}

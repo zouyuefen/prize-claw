@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "btn-start",
+    "name": "btn-start-normal",
     "texture": "c3b2d678-ac6d-4d80-a469-3d1cb55a7f68",
     "atlas": "",
     "rect": [

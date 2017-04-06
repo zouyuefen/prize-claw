@@ -1,73 +1,102 @@
+import Game from 'game'
+import Shop from 'shop'
+import Audio from 'audio'
+import Record from 'record'
+import Login from 'login'
+import api from 'api'
+import user from 'user'
+
+
+const script = document.createElement('script')
+document.body.appendChild(script)
+script.onload = function() {
+    axios.defaults.withCredentials = true
+}
+script.src = '//cdn.yoosh.tv/js/axios.min.js'
+
+
+
+
+const openCollision = () => {
+    const manager = cc.director.getCollisionManager()
+    manager.enabled = true
+
+    /*
+    * 开启 debug 模式
+    * 正式环境下关闭
+    */
+    if (location.port === '7456') {
+        manager.enabledDebugDraw = true
+    }
+}
+
+
 cc.Class({
     extends: cc.Component,
-
     properties: {
-        startBtn: {
+        game: {
             default: null,
-            type: cc.Node
+            type: Game
         },
-        stakeBtns: {
-            default: [],
-            type: cc.Node
+        shop: {
+            default: null,
+            type: Shop
         },
-        cats: {
-            default: [],
-            type: cc.Node
+        audio: {
+            default: null,
+            type: Audio
         },
-        spirteFrames: {
-            default: [],
-            type: cc.SpriteFrame
+        record: {
+            default: null,
+            type: Record
         },
-        stakes: {
-            default: {}
+        login: {
+            default: null,
+            type: Login
         }
     },
+    onLoad() {
+        // 开启碰撞检测
+        openCollision()
 
+        //
+        this.gift = this.node.getChildByName('game')
+            .getComponent('gift')
 
-    // use this for initialization
+        this.api = api
 
+        this.spriteFrames = this.node.getComponent('spriteFrame')
 
-    onLoad: function () {
-        // 填充背景色
-        document.querySelector('body').style.backgroundColor = '#963bce'
+        api.getUserInfo()
+        .then(res => {
+            if (!res.data.ok) {
+                const code = api.getParam('code')
+                if (code) {
+                    api.login(code)
+                    .then(res => {
+                        if (res.data.ok) {
+                            user.nickname = res.data.r.nickname
+                            user.balance = res.data.r.balance
+                            user.phone = res.data.r.phone
+                            user.avatar = res.data.r.profileImg
+                            this.user = user
 
-        this.startBtn.on(
-            cc.Node.EventType.TOUCH_START,
-            () => {
-                this.startBtn.scale = .95
-            }
-        )
-
-        this.startBtn.on(
-            cc.Node.EventType.TOUCH_END,
-            () => {
-                this.startBtn.scale = 1
-            }
-        )
-
-        this.stakeBtns.forEach(btn => {
-            btn.on(
-                cc.Node.EventType.TOUCH_START,
-                () => {
-                    this.stakeBtns.forEach(btn => {
-                        btn.getComponent(cc.Sprite).spriteFrame =
-                            this.spirteFrames[0]
+                            this.game.score.getComponent(cc.Label)
+                                .string = user.balance
+                        }
                     })
-                    btn.getComponent(cc.Sprite).spriteFrame =
-                        this.spirteFrames[1]
-                }
-            )
-        })
-    },
+                } else api.authorize()
+            } else {
+                user.nickname = res.data.r.nickname
+                user.balance = res.data.r.balance
+                user.phone = res.data.r.phone
+                user.avatar = res.data.r.profileImg
+                this.user = user
 
-    // called every frame, uncomment this function to activate update callback
-    update: function (dt) {
-        this.cats.forEach(cat => {
-            cat.x++
-            if (cat.x > (cc.winSize.width + cat.width)* .5) {
-                cat.x = -(cc.winSize.width + cat.width) * .5
+                this.game.score.getComponent(cc.Label)
+                    .string = user.balance
             }
-
         })
-    },
-});
+
+    }
+})
