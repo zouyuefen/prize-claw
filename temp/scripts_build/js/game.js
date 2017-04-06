@@ -114,32 +114,27 @@ exports.default = cc.Class({
         // 设置下注按钮 zIndex
         this.stake.zIndex = 3;
 
-        // 下注金额：默认 500
-        this.stakeValue = 500;
-
-        // 设置
-        this.setMatch();
+        // 下注值
+        this.stakeValue = null;
 
         // 获取场次
         this.getModelList();
     },
-    setMatch: function setMatch() {
-        var btn = this.stakeBtns[0];
+    setMatch: function setMatch(index, id) {
+        var btn = this.stakeBtns[index];
 
         btn.getComponent(cc.Sprite).spriteFrame = this.main.spriteFrames.stakeBtnPress;
 
         var text = btn.getChildByName('text');
-
         text.stopAllActions();
         text.runAction(cc.jumpTo(1, 0, 9, 10, 3));
 
         // 设置 当前下注值
-        this.setStake(0);
+        this.setStake(index);
 
         // 设置 当前场次 id
-        this.matchId = 1;
+        this.matchId = id;
 
-        // 获取奖品列表
         this.getPrizeList();
     },
     setStake: function setStake(val) {
@@ -154,7 +149,6 @@ exports.default = cc.Class({
                 this.stake.getComponent(cc.Sprite).spriteFrame = this.main.spriteFrames.matchS;
                 break;
         }
-        this.stake.getChildByName('stake').getComponent(cc.Label).string = val;
     },
 
 
@@ -164,14 +158,22 @@ exports.default = cc.Class({
 
         this.main.api.getModelList().then(function (res) {
             if (res.data.ok) {
-                _this.stakeBtns.forEach(function (item) {
-                    item.active = false;
-                });
+
                 res.data.r.forEach(function (item, i) {
                     _this.stakeBtns[i].active = true;
                     _this.stakeBtns[i].getChildByName('text').getComponent(cc.Label).string = item.name;
 
                     _this.stakeBtns[i]._matchId = item.id;
+                    _this.stakeBtns[i]._openState = item.openState;
+                    _this.stakeBtns[i]._value = item.goldExpend;
+
+                    // 非开放状态
+                    if (!item.openState) {
+                        _this.stakeBtns[i].getComponent(cc.Sprite).spriteFrame = _this.main.spriteFrames.stakeBtnDisable;
+                    } else if (_this.stakeValue === null) {
+                        _this.stakeValue = item.goldExpend;
+                        _this.setMatch(i, item.id);
+                    }
                 });
             }
         });
@@ -223,8 +225,15 @@ exports.default = cc.Class({
         // 下注按钮
         this.stakeBtns.forEach(function (btn, index) {
             btn._index = index;
-            btn.on(cc.Node.EventType.TOUCH_START, function () {
-                var val = btn.getChildByName('text').getComponent(cc.Label).string;
+            btn.on(cc.Node.EventType.TOUCH_START, function (event) {
+
+                // 禁选
+                if (!btn._openState) {
+                    event.stopPropagation();
+                    return;
+                }
+
+                var val = btn._value;
                 if (val > _this4.main.user.balance) {
                     _this4.main.shop.show();
                     return;
@@ -232,7 +241,11 @@ exports.default = cc.Class({
                 _this4.stakeValue = val;
 
                 _this4.stakeBtns.forEach(function (btn) {
-                    btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnNormal;
+                    if (btn._openState) {
+                        btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnNormal;
+                    } else {
+                        btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnDisable;
+                    }
                     // 移除其他特效
                     btn.getChildByName('text').stopAllActions();
                     btn.getChildByName('text').runAction(cc.moveTo(0, 0, 18));

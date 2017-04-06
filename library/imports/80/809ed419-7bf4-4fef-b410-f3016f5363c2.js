@@ -136,11 +136,14 @@ exports.default = cc.Class({
                         needEmpty = true;
                     }
 
-                    cc.loader.load(item.img, function (err, texture) {
+                    cc.loader.load([item.img, item.promotionImg], function (err, results) {
                         if (err) console.log(err);else {
-                            child.getChildByName('image').getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(texture);
+                            child.getChildByName('image').getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(results.getContent(item.img));
 
                             child.getChildByName('layout').x = -45;
+
+                            // 折扣图标
+                            child.getChildByName('coupon').getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(results.getContent(item.promotionImg));
                         }
                         if (++i < list.length) load();else if (needEmpty) {
                             _this2.layout.addChild(_this2.empty);

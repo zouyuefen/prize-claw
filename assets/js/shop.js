@@ -75,6 +75,9 @@ export default cc.Class({
 
 
     show() {
+
+        this.main.api.monitor('获取金币', 7)
+
         if (this.node.active) this.node.opacity = 0
         else {
             this.node.active = true
@@ -162,13 +165,17 @@ export default cc.Class({
                         needEmpty = true
                     }
 
-                    cc.loader.load(item.img, (err, texture) => {
+                    cc.loader.load([item.img, item.promotionImg], (err, results) => {
                         if (err) console.log(err)
                         else {
                             child.getChildByName('image').getComponent(cc.Sprite)
-                                .spriteFrame = new cc.SpriteFrame(texture)
+                                .spriteFrame = new cc.SpriteFrame(results.getContent(item.img))
 
                             child.getChildByName('layout').x = -45
+
+                            // 折扣图标
+                            child.getChildByName('coupon').getComponent(cc.Sprite)
+                                .spriteFrame = new cc.SpriteFrame(results.getContent(item.promotionImg))
                         }
                         if (++i < list.length) load()
                         else if (needEmpty) {

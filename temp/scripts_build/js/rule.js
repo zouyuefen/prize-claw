@@ -2,27 +2,25 @@
 cc._RFpush(module, '1258dwowHJHp4dxnVYNTBFd', 'rule');
 // js\rule.js
 
-Object.defineProperty(exports, '__esModule', {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports['default'] = cc.Class({
-    'extends': cc.Component,
+exports.default = cc.Class({
+    extends: cc.Component,
     properties: {
         btn: {
-            'default': null,
+            default: null,
             type: cc.Node
         },
         mask: {
-            'default': null,
+            default: null,
             type: cc.Node
         },
         bkg: {
-            'default': null,
+            default: null,
             type: cc.Node
-        },
-        checkMark: {
-            'default': null,
-            type: cc.Toggle
         }
     },
 
@@ -30,23 +28,16 @@ exports['default'] = cc.Class({
         this.init();
         this.listen();
     },
-
     init: function init() {
-        // this.checkMark.opacity = 0
-        // this.checkMark.runAction(cc.hide())
-        this.checkMark.isChecked = false;
+        this.node.active = false;
     },
-
     show: function show() {
         if (this.node.active) this.node.opacity = 0;else {
             this.node.active = true;
             this.node.opacity = 0;
         }
         this.node.runAction(cc.fadeIn(.5));
-        // this.bkg.y -= 200
-        // this.bkg.runAction(cc.moveBy(1, 0, 200).easing(cc.easeOut(3)))
     },
-
     listen: function listen() {
         var _this = this;
 
@@ -55,14 +46,9 @@ exports['default'] = cc.Class({
         });
 
         this.btn.on(cc.Node.EventType.TOUCH_START, function () {
-            if (!_this.checkMark.isChecked) {
-                alert('请同意协议后继续');
-                return;
-            }
             _this.hide();
         });
     },
-
     hide: function hide() {
         var _this2 = this;
 
@@ -70,8 +56,6 @@ exports['default'] = cc.Class({
             _this2.node.active = false;
         })));
     }
-
 });
-module.exports = exports['default'];
 
 cc._RFpop();

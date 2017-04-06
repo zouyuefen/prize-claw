@@ -65,6 +65,7 @@ export default cc.Class({
     onLoad() {
         this.init()
         this.listen()
+        this.main.api.monitor('进入游戏', 1)
     },
     init() {
         /*
@@ -106,14 +107,12 @@ export default cc.Class({
     },
 
     setMatch(index, id) {
-        const btn = this.stakeBtns[0]
+        const btn = this.stakeBtns[index]
 
         btn.getComponent(cc.Sprite).spriteFrame =
             this.main.spriteFrames.stakeBtnPress
 
         const text = btn.getChildByName('text')
-
-
         text.stopAllActions()
         text.runAction(cc.jumpTo(1, 0, 9, 10, 3))
 
@@ -122,6 +121,8 @@ export default cc.Class({
 
         // 设置 当前场次 id
         this.matchId = id
+
+        this.getPrizeList()
 
     },
 
@@ -159,10 +160,11 @@ export default cc.Class({
 
                     // 非开放状态
                     if (!item.openState) {
-
+                        this.stakeBtns[i].getComponent(cc.Sprite)
+                            .spriteFrame = this.main.spriteFrames.stakeBtnDisable
                     } else if (this.stakeValue === null) {
                         this.stakeValue = item.goldExpend
-                        this.setStake(i, item.id)
+                        this.setMatch(i, item.id)
                     }
                 })
             }
@@ -223,6 +225,8 @@ export default cc.Class({
                     this.main.shop.show()
                 }
                 else this.claw.fall()
+
+                this.main.api.monitor('开始按钮', 6)
             }
         )
 
@@ -247,8 +251,13 @@ export default cc.Class({
                     this.stakeValue = val
 
                     this.stakeBtns.forEach(btn => {
-                        btn.getComponent(cc.Sprite).spriteFrame =
-                            this.main.spriteFrames.stakeBtnNormal
+                        if (btn._openState) {
+                            btn.getComponent(cc.Sprite).spriteFrame =
+                                this.main.spriteFrames.stakeBtnNormal
+                        } else {
+                            btn.getComponent(cc.Sprite).spriteFrame =
+                                this.main.spriteFrames.stakeBtnDisable
+                        }
                         // 移除其他特效
                         btn.getChildByName('text')
                             .stopAllActions()
@@ -268,6 +277,18 @@ export default cc.Class({
 
                     // 下注
                     this.setStake(btn._index)
+
+                    switch(btn._index) {
+                        case 0:
+                            this.main.api.monitor('500场', 3)
+                            break
+                        case 1:
+                            this.main.api.monitor('1000场', 4)
+                            break
+                        case 2:
+                            this.main.api.monitor('2000场', 5)
+                            break
+                    }
 
 
                     // 设置 当前场次 id
@@ -297,6 +318,7 @@ export default cc.Class({
                 this.ruleBtn.scale = 1
                 this.rule.show()
             }
+
         )
 
         // giftBtn

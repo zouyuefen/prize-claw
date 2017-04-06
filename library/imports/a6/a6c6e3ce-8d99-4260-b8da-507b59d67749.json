@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn-disable",
+    "texture": "bb50b9d6-868e-4b27-bd89-59143c25ac94",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      108,
+      94
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      94
+    ]
+  }
+}

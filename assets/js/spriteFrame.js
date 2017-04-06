@@ -18,6 +18,10 @@ export default cc.Class({
             default: null,
             type: cc.SpriteFrame
         },
+        stakeBtnDisable: {
+            default: null,
+            type: cc.SpriteFrame
+        },
         resultFail: {
             default: null,
             type: cc.SpriteFrame

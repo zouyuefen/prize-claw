@@ -121,12 +121,11 @@ exports.default = cc.Class({
         this.getModelList();
     },
     setMatch: function setMatch(index, id) {
-        var btn = this.stakeBtns[0];
+        var btn = this.stakeBtns[index];
 
         btn.getComponent(cc.Sprite).spriteFrame = this.main.spriteFrames.stakeBtnPress;
 
         var text = btn.getChildByName('text');
-
         text.stopAllActions();
         text.runAction(cc.jumpTo(1, 0, 9, 10, 3));
 
@@ -135,6 +134,8 @@ exports.default = cc.Class({
 
         // 设置 当前场次 id
         this.matchId = id;
+
+        this.getPrizeList();
     },
     setStake: function setStake(val) {
         switch (val) {
@@ -167,9 +168,11 @@ exports.default = cc.Class({
                     _this.stakeBtns[i]._value = item.goldExpend;
 
                     // 非开放状态
-                    if (!item.openState) {} else if (_this.stakeValue === null) {
+                    if (!item.openState) {
+                        _this.stakeBtns[i].getComponent(cc.Sprite).spriteFrame = _this.main.spriteFrames.stakeBtnDisable;
+                    } else if (_this.stakeValue === null) {
                         _this.stakeValue = item.goldExpend;
-                        _this.setStake(i, item.id);
+                        _this.setMatch(i, item.id);
                     }
                 });
             }
@@ -238,7 +241,11 @@ exports.default = cc.Class({
                 _this4.stakeValue = val;
 
                 _this4.stakeBtns.forEach(function (btn) {
-                    btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnNormal;
+                    if (btn._openState) {
+                        btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnNormal;
+                    } else {
+                        btn.getComponent(cc.Sprite).spriteFrame = _this4.main.spriteFrames.stakeBtnDisable;
+                    }
                     // 移除其他特效
                     btn.getChildByName('text').stopAllActions();
                     btn.getChildByName('text').runAction(cc.moveTo(0, 0, 18));

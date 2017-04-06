@@ -126,6 +126,15 @@ function Api() {
         })
     }
 
+    this.monitor = function(event, eventType) {
+        axios.get(`${SERVER}/event/monitor`, {
+            params: {
+                event,
+                eventType
+            }
+        })
+    }
+
 }
 
 Api.prototype = Base

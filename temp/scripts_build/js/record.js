@@ -125,7 +125,9 @@ exports.default = cc.Class({
 
                     cc.loader.load(item.goodsImg, function (err, texture) {
                         if (err) console.log(err);else {
-                            child.getChildByName('image').getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(texture);
+                            var img = child.getChildByName('image');
+                            img.getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(texture);
+                            if (item.goodsType === 1) img.scale = .3;
                         }
                         if (++i < list.length) load();
                     });

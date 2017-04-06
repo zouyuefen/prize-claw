@@ -235,8 +235,8 @@
     "relativePath": "resources\\image\\game\\score-bkg.png"
   },
   "4cfae95f-3c26-4092-8fa4-150777a48293": {
-    "asset": 1491383508943,
-    "meta": 1491383508970,
+    "asset": 1491472534633,
+    "meta": 1491472534677,
     "relativePath": "scene\\main.fire"
   },
   "270d095a-bc61-4ce7-9d8d-f1c3d176b6ee": {
@@ -399,11 +399,6 @@
     "meta": 1490457241605,
     "relativePath": "resources\\image\\rule\\rule-bkg.png"
   },
-  "0635fb60-ba48-4e0d-a13f-0e2a182f466a": {
-    "asset": 1490530576637,
-    "meta": 1490530588435,
-    "relativePath": "resources\\image\\shop\\shop-title.png"
-  },
   "5b00d8e4-936d-466a-84cb-7045cd14fe64": {
     "asset": 1490530771051,
     "meta": 1490530781168,
@@ -445,8 +440,8 @@
     "relativePath": "resources\\image\\shop\\goods\\5.png"
   },
   "8adc5231-4ad1-468d-80c8-bbab6f2eb221": {
-    "asset": 1491383269886,
-    "meta": 1491383269897,
+    "asset": 1491468877673,
+    "meta": 1491468877698,
     "relativePath": "prefab\\goods-item.prefab"
   },
   "c0e3217f-79a9-45c0-89be-6502d99f739b": {
@@ -624,11 +619,6 @@
     "meta": 1491375150710,
     "relativePath": "resources\\image\\game\\match-s.png"
   },
-  "e1ec803c-426f-49b8-b260-6e7b99e9f4d6": {
-    "asset": 1491375783116,
-    "meta": 1491375785487,
-    "relativePath": "js\\spriteFrame.js"
-  },
   "b4571e29-4a03-4a13-9c0e-f576ddb8a7fe": {
     "asset": 1491377917754,
     "meta": 1491377922703,
@@ -669,24 +659,39 @@
     "meta": 1491383234761,
     "relativePath": "js\\collision.js"
   },
-  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
-    "asset": 1491383485507,
-    "meta": 1491383495226,
-    "relativePath": "js\\shop.js"
-  },
   "6b7cc14f-e704-4dfe-a9b3-56df2bdf8a92": {
     "asset": 1491456077165,
     "meta": 1491456078875,
     "relativePath": "js\\record.js"
   },
-  "be740382-f997-4b25-b78c-b18596ff2e74": {
-    "asset": 1491461010569,
-    "meta": 1491461017157,
-    "relativePath": "js\\game.js"
-  },
   "1258dc28-c072-47a7-8771-9d560d4c115d": {
     "asset": 1491461531330,
     "meta": 1491461533148,
     "relativePath": "js\\rule.js"
+  },
+  "bb50b9d6-868e-4b27-bd89-59143c25ac94": {
+    "asset": 1491467320859,
+    "meta": 1491467339912,
+    "relativePath": "resources\\image\\game\\btn-disable.png"
+  },
+  "e1ec803c-426f-49b8-b260-6e7b99e9f4d6": {
+    "asset": 1491467389796,
+    "meta": 1491467392380,
+    "relativePath": "js\\spriteFrame.js"
+  },
+  "2c53c0e8-1fb8-4021-95c3-2244ee54b88e": {
+    "asset": 1491467447615,
+    "meta": 1491467467822,
+    "relativePath": "resources\\image\\shop\\title.png"
+  },
+  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
+    "asset": 1491468327769,
+    "meta": 1491468384497,
+    "relativePath": "js\\shop.js"
+  },
+  "be740382-f997-4b25-b78c-b18596ff2e74": {
+    "asset": 1491472419577,
+    "meta": 1491472422574,
+    "relativePath": "js\\game.js"
   }
 }
