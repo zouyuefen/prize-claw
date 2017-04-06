@@ -59,6 +59,8 @@ cc.Class({
         // 开启碰撞检测
         openCollision()
 
+        window._main = this
+
         //
         this.gift = this.node.getChildByName('game')
             .getComponent('gift')

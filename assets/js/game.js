@@ -65,14 +65,9 @@ export default cc.Class({
     onLoad() {
         this.init()
         this.listen()
-        this.main.api.monitor('进入游戏', 1)
+        window._main.api.monitor('进入游戏', 1)
     },
     init() {
-        /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = this.node.parent.getComponent('main')
 
         // 坑下围 zIndex < gift.zIndex
         this.pitAround.zIndex = 1
@@ -86,7 +81,7 @@ export default cc.Class({
         this.result.active = false
 
         // 隐藏获奖记录
-        this.main.record.node.active = false
+        window._main.record.node.active = false
 
         // 设置边框的 zIndex
         this.border.zIndex = 3
@@ -110,7 +105,7 @@ export default cc.Class({
         const btn = this.stakeBtns[index]
 
         btn.getComponent(cc.Sprite).spriteFrame =
-            this.main.spriteFrames.stakeBtnPress
+            window._main.spriteFrames.stakeBtnPress
 
         const text = btn.getChildByName('text')
         text.stopAllActions()
@@ -130,22 +125,22 @@ export default cc.Class({
         switch (val) {
             case 1:
                 this.stake.getComponent(cc.Sprite).spriteFrame =
-                    this.main.spriteFrames.matchM
+                    window._main.spriteFrames.matchM
                 break
             case 2:
                 this.stake.getComponent(cc.Sprite).spriteFrame =
-                    this.main.spriteFrames.matchL
+                    window._main.spriteFrames.matchL
                 break
             default:
                 this.stake.getComponent(cc.Sprite).spriteFrame =
-                    this.main.spriteFrames.matchS
+                    window._main.spriteFrames.matchS
                 break
         }
     },
 
     // 获取可玩场次
     getModelList() {
-        this.main.api.getModelList()
+        window._main.api.getModelList()
         .then(res => {
             if (res.data.ok) {
 
@@ -161,7 +156,7 @@ export default cc.Class({
                     // 非开放状态
                     if (!item.openState) {
                         this.stakeBtns[i].getComponent(cc.Sprite)
-                            .spriteFrame = this.main.spriteFrames.stakeBtnDisable
+                            .spriteFrame = window._main.spriteFrames.stakeBtnDisable
                     } else if (this.stakeValue === null) {
                         this.stakeValue = item.goldExpend
                         this.setMatch(i, item.id)
@@ -173,10 +168,10 @@ export default cc.Class({
 
     // 获取奖品列表
     getPrizeList() {
-        this.main.api.getPrizeList(this.matchId)
+        window._main.api.getPrizeList(this.matchId)
         .then(res => {
             if (res.data.ok) {
-                this.main.gift.build(res.data.r)
+                window._main.gift.build(res.data.r)
             }
         })
     },
@@ -210,23 +205,23 @@ export default cc.Class({
         this.startBtn.on(
             cc.Node.EventType.TOUCH_START,
             () => {
-                this.main.audio.clickStart.play()
+                window._main.audio.clickStart.play()
                 this.startBtn.getComponent(cc.Sprite).spriteFrame =
-                    this.main.spriteFrames.startBtnPress
+                    window._main.spriteFrames.startBtnPress
             }
         )
         this.startBtn.on(
             cc.Node.EventType.TOUCH_END,
             () => {
                 this.startBtn.getComponent(cc.Sprite).spriteFrame =
-                    this.main.spriteFrames.startBtnNormal
+                    window._main.spriteFrames.startBtnNormal
                 if (this.matchId === null) alert('请先下注')
-                else if (this.main.user.balance < this.stakeValue) {
-                    this.main.shop.show()
+                else if (window._main.user.balance < this.stakeValue) {
+                    window._main.shop.show()
                 }
                 else this.claw.fall()
 
-                this.main.api.monitor('开始按钮', 6)
+                window._main.api.monitor('开始按钮', 6)
             }
         )
 
@@ -244,8 +239,8 @@ export default cc.Class({
                     }
 
                     const val = btn._value
-                    if (val > this.main.user.balance) {
-                        this.main.shop.show()
+                    if (val > window._main.user.balance) {
+                        window._main.shop.show()
                         return
                     }
                     this.stakeValue = val
@@ -253,10 +248,10 @@ export default cc.Class({
                     this.stakeBtns.forEach(btn => {
                         if (btn._openState) {
                             btn.getComponent(cc.Sprite).spriteFrame =
-                                this.main.spriteFrames.stakeBtnNormal
+                                window._main.spriteFrames.stakeBtnNormal
                         } else {
                             btn.getComponent(cc.Sprite).spriteFrame =
-                                this.main.spriteFrames.stakeBtnDisable
+                                window._main.spriteFrames.stakeBtnDisable
                         }
                         // 移除其他特效
                         btn.getChildByName('text')
@@ -267,7 +262,7 @@ export default cc.Class({
                     })
 
                     btn.getComponent(cc.Sprite).spriteFrame =
-                        this.main.spriteFrames.stakeBtnPress
+                        window._main.spriteFrames.stakeBtnPress
 
                     const text = btn.getChildByName('text')
 
@@ -280,13 +275,13 @@ export default cc.Class({
 
                     switch(btn._index) {
                         case 0:
-                            this.main.api.monitor('500场', 3)
+                            window._main.api.monitor('500场', 3)
                             break
                         case 1:
-                            this.main.api.monitor('1000场', 4)
+                            window._main.api.monitor('1000场', 4)
                             break
                         case 2:
-                            this.main.api.monitor('2000场', 5)
+                            window._main.api.monitor('2000场', 5)
                             break
                     }
 
@@ -332,7 +327,7 @@ export default cc.Class({
             cc.Node.EventType.TOUCH_END,
             () => {
                 this.giftBtn.scale = 1
-                this.main.record.show()
+                window._main.record.show()
             }
         )
 
@@ -347,7 +342,7 @@ export default cc.Class({
             cc.Node.EventType.TOUCH_END,
             () => {
                 this.addBtn.scale = 1
-                this.main.shop.show()
+                window._main.shop.show()
             }
         )
     }

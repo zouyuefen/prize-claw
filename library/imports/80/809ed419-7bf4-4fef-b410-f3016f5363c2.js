@@ -34,12 +34,6 @@ exports.default = cc.Class({
     },
     init: function init() {
         /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene().getChildByName('main').getComponent('main');
-
-        /*
         * 创建空借点
         * 抵消 layout 的 coupon
         */
@@ -69,13 +63,15 @@ exports.default = cc.Class({
     show: function show() {
         var _this2 = this;
 
+        // window._main.api.monitor('获取金币', 7)
+
         if (this.node.active) this.node.opacity = 0;else {
             this.node.active = true;
             this.node.opacity = 0;
         }
         this.node.runAction(cc.fadeIn(.5));
 
-        this.main.api.goodsList().then(function (res) {
+        window._main.api.goodsList().then(function (res) {
             if (res.data.ok) {
                 if (res.data.r.length === 0) {
                     return;
@@ -124,11 +120,13 @@ exports.default = cc.Class({
 
                         child.getChildByName('btn').on(cc.Node.EventType.TOUCH_END, function (event) {
                             event.target.scale = 1;
-                            _this2.main.api.purchase(child._goodsId).then(function (res) {
+                            window._main.api.purchase(child._goodsId).then(function (res) {
                                 if (res.data.ok) {
                                     location.href = res.data.r;
                                 }
                             });
+
+                            window._main.api.monitor(item.name, 8, item.id);
                         });
                     }
 

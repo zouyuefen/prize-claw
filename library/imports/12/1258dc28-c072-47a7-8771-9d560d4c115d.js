@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -21,13 +21,11 @@ exports.default = cc.Class({
     },
 
     onLoad: function onLoad() {
-        this.init();
         this.listen();
     },
-    init: function init() {
-        this.node.active = false;
-    },
     show: function show() {
+        window._main.api.monitor('规则界面', 14);
+
         if (this.node.active) this.node.opacity = 0;else {
             this.node.active = true;
             this.node.opacity = 0;

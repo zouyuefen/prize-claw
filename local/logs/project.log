@@ -465,3 +465,561 @@
 2017-04-06T09:55:55.093Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
 2017-04-06T09:55:55.105Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
 2017-04-06T09:55:55.126Z - normal: Built to "D:\workspace\web\work\games\prize-claw\build\web-mobile" successfully
+2017-04-06T11:16:23.701Z - normal: Compiled project javascript file successfully
+2017-04-06T11:20:04.999Z - normal: Compiled project javascript file successfully
+2017-04-06T11:33:49.691Z - normal: Compiled project javascript file successfully
+2017-04-06T11:33:56.059Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\prize-claw\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\prize-claw\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\prize-claw",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-04-06T11:33:56.060Z - normal: Building D:\workspace\web\work\games\prize-claw
+2017-04-06T11:33:56.061Z - normal: Destination D:\workspace\web\work\games\prize-claw\build\web-mobile
+2017-04-06T11:33:56.063Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\res/**/*
+2017-04-06T11:33:56.064Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\src/*/
+2017-04-06T11:33:59.904Z - normal: Compiled project javascript file successfully
+2017-04-06T11:33:59.904Z - normal: Start building assets
+2017-04-06T11:33:59.905Z - normal: Start spawn build-worker
+2017-04-06T11:34:01.016Z - normal: Finish spawn build-worker
+2017-04-06T11:34:01.016Z - normal: Start init build-worker
+2017-04-06T11:34:02.535Z - normal: 1.4.2
+2017-04-06T11:34:02.597Z - normal: Finish init build-worker
+2017-04-06T11:34:02.597Z - normal: Start build-assets in worker
+2017-04-06T11:34:03.683Z - normal: Finish build-assets in worker
+2017-04-06T11:34:03.689Z - normal: Finish building assets
+2017-04-06T11:34:03.729Z - normal: Start building raw assets
+2017-04-06T11:34:03.730Z - normal: [build-raw-assets] Start copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T11:34:03.731Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T11:34:03.732Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T11:34:03.732Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T11:34:03.732Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T11:34:03.732Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T11:34:03.732Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T11:34:03.733Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T11:34:03.733Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T11:34:03.733Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T11:34:03.733Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T11:34:03.733Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T11:34:03.734Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T11:34:03.734Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T11:34:03.734Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T11:34:03.734Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T11:34:03.735Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T11:34:03.735Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T11:34:03.735Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T11:34:03.735Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T11:34:03.735Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T11:34:03.736Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T11:34:03.736Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T11:34:03.736Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T11:34:03.736Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T11:34:03.736Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T11:34:03.737Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T11:34:03.737Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T11:34:03.737Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T11:34:03.737Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T11:34:03.737Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T11:34:03.738Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T11:34:03.739Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T11:34:03.739Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T11:34:03.739Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T11:34:03.739Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T11:34:03.739Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T11:34:03.740Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T11:34:03.741Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T11:34:03.742Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T11:34:03.742Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T11:34:03.742Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T11:34:03.742Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T11:34:03.743Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T11:34:03.743Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T11:34:03.743Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T11:34:03.743Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T11:34:03.743Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T11:34:03.745Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T11:34:03.822Z - normal: [build-raw-assets] Finish copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T11:34:03.838Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T11:34:03.842Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T11:34:03.843Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T11:34:03.851Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T11:34:03.851Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T11:34:03.853Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T11:34:03.854Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T11:34:03.854Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T11:34:03.860Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T11:34:03.860Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T11:34:03.860Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T11:34:03.860Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T11:34:03.861Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T11:34:03.862Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T11:34:03.863Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T11:34:03.864Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T11:34:03.865Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T11:34:03.865Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T11:34:03.865Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T11:34:03.865Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T11:34:03.866Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T11:34:03.867Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T11:34:03.871Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T11:34:03.871Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T11:34:03.871Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T11:34:03.871Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T11:34:03.872Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T11:34:03.872Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T11:34:03.872Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T11:34:03.872Z - normal: Finish building raw assets
+2017-04-06T11:34:03.880Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-04-06T11:34:03.887Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-04-06T11:34:03.896Z - normal: Built to "D:\workspace\web\work\games\prize-claw\build\web-mobile" successfully
+2017-04-06T11:47:30.744Z - normal: Compiled project javascript file successfully
+2017-04-06T11:49:47.462Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\prize-claw\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\prize-claw\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\prize-claw",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-04-06T11:49:47.466Z - normal: Building D:\workspace\web\work\games\prize-claw
+2017-04-06T11:49:47.466Z - normal: Destination D:\workspace\web\work\games\prize-claw\build\web-mobile
+2017-04-06T11:49:47.468Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\res/**/*
+2017-04-06T11:49:47.469Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\src/*/
+2017-04-06T11:49:51.661Z - normal: Compiled project javascript file successfully
+2017-04-06T11:49:51.662Z - normal: Start building assets
+2017-04-06T11:49:51.662Z - normal: Start spawn build-worker
+2017-04-06T11:49:53.019Z - normal: Finish spawn build-worker
+2017-04-06T11:49:53.025Z - normal: Start init build-worker
+2017-04-06T11:49:54.854Z - normal: 1.4.2
+2017-04-06T11:49:54.944Z - normal: Finish init build-worker
+2017-04-06T11:49:54.944Z - normal: Start build-assets in worker
+2017-04-06T11:49:56.224Z - normal: Finish build-assets in worker
+2017-04-06T11:49:56.235Z - normal: Finish building assets
+2017-04-06T11:49:56.285Z - normal: Start building raw assets
+2017-04-06T11:49:56.286Z - normal: [build-raw-assets] Start copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T11:49:56.287Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T11:49:56.287Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T11:49:56.288Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T11:49:56.288Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T11:49:56.288Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T11:49:56.288Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T11:49:56.288Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T11:49:56.289Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T11:49:56.290Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T11:49:56.291Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T11:49:56.291Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T11:49:56.291Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T11:49:56.291Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T11:49:56.291Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T11:49:56.292Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T11:49:56.292Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T11:49:56.292Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T11:49:56.292Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T11:49:56.292Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T11:49:56.293Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T11:49:56.293Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T11:49:56.293Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T11:49:56.293Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T11:49:56.293Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T11:49:56.294Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T11:49:56.295Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T11:49:56.295Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T11:49:56.295Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T11:49:56.295Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T11:49:56.295Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T11:49:56.296Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T11:49:56.296Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T11:49:56.296Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T11:49:56.296Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T11:49:56.297Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T11:49:56.297Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T11:49:56.297Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T11:49:56.298Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T11:49:56.298Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T11:49:56.298Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T11:49:56.298Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T11:49:56.298Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T11:49:56.299Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T11:49:56.392Z - normal: [build-raw-assets] Finish copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T11:49:56.428Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T11:49:56.435Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T11:49:56.436Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T11:49:56.445Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T11:49:56.445Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T11:49:56.447Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T11:49:56.448Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T11:49:56.449Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T11:49:56.462Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T11:49:56.462Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T11:49:56.463Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T11:49:56.463Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T11:49:56.463Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T11:49:56.464Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T11:49:56.465Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T11:49:56.466Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T11:49:56.466Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T11:49:56.466Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T11:49:56.466Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T11:49:56.467Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T11:49:56.468Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T11:49:56.469Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T11:49:56.469Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T11:49:56.469Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T11:49:56.469Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T11:49:56.470Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T11:49:56.473Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T11:49:56.474Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T11:49:56.474Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T11:49:56.475Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T11:49:56.475Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T11:49:56.475Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T11:49:56.475Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T11:49:56.476Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T11:49:56.476Z - normal: Finish building raw assets
+2017-04-06T11:49:56.490Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-04-06T11:49:56.504Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-04-06T11:49:56.521Z - normal: Built to "D:\workspace\web\work\games\prize-claw\build\web-mobile" successfully
+2017-04-06T11:56:08.313Z - normal: Compiled project javascript file successfully
+2017-04-06T11:56:30.289Z - normal: Compiled project javascript file successfully
+2017-04-06T11:57:24.295Z - normal: Compiled project javascript file successfully
+2017-04-06T11:58:16.285Z - normal: Compiled project javascript file successfully
+2017-04-06T11:59:47.267Z - normal: Compiled project javascript file successfully
+2017-04-06T12:00:31.319Z - normal: Compiled project javascript file successfully
+2017-04-06T12:02:07.446Z - normal: Compiled project javascript file successfully
+2017-04-06T12:08:11.960Z - normal: Compiled project javascript file successfully
+2017-04-06T12:12:12.668Z - normal: Compiled project javascript file successfully
+2017-04-06T12:15:16.808Z - normal: Compiled project javascript file successfully
+2017-04-06T12:18:23.248Z - normal: Compiled project javascript file successfully
+2017-04-06T12:19:11.303Z - normal: Start building with options : {
+  "androidStudio": false,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "D:\\workspace\\web\\work\\games\\prize-claw\\build",
+  "debug": false,
+  "dest": "D:\\workspace\\web\\work\\games\\prize-claw\\build\\web-mobile",
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.hello",
+  "platform": "web-mobile",
+  "previewHeight": 720,
+  "previewWidth": 1280,
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    {
+      "url": "db://assets/scene/main.fire",
+      "uuid": "4cfae95f-3c26-4092-8fa4-150777a48293"
+    }
+  ],
+  "sourceMaps": false,
+  "startScene": "4cfae95f-3c26-4092-8fa4-150777a48293",
+  "template": "default",
+  "title": "prize-claw",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "project": "D:\\workspace\\web\\work\\games\\prize-claw",
+  "projectName": "prize-claw",
+  "runtimePath": "D:\\software\\cocos\\resources\\engine",
+  "debugBuildWorker": false
+}
+2017-04-06T12:19:11.306Z - normal: Building D:\workspace\web\work\games\prize-claw
+2017-04-06T12:19:11.307Z - normal: Destination D:\workspace\web\work\games\prize-claw\build\web-mobile
+2017-04-06T12:19:11.311Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\res/**/*
+2017-04-06T12:19:11.312Z - normal: Delete D:\workspace\web\work\games\prize-claw\build\web-mobile\src/*/
+2017-04-06T12:19:15.580Z - normal: Compiled project javascript file successfully
+2017-04-06T12:19:15.580Z - normal: Start building assets
+2017-04-06T12:19:15.581Z - normal: Start spawn build-worker
+2017-04-06T12:19:16.964Z - normal: Finish spawn build-worker
+2017-04-06T12:19:16.964Z - normal: Start init build-worker
+2017-04-06T12:19:18.753Z - normal: 1.4.2
+2017-04-06T12:19:18.846Z - normal: Finish init build-worker
+2017-04-06T12:19:18.846Z - normal: Start build-assets in worker
+2017-04-06T12:19:20.098Z - normal: Finish build-assets in worker
+2017-04-06T12:19:20.108Z - normal: Finish building assets
+2017-04-06T12:19:20.154Z - normal: Start building raw assets
+2017-04-06T12:19:20.156Z - normal: [build-raw-assets] Start copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T12:19:20.157Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T12:19:20.157Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T12:19:20.158Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T12:19:20.158Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T12:19:20.158Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T12:19:20.158Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T12:19:20.158Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T12:19:20.159Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T12:19:20.159Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T12:19:20.159Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T12:19:20.159Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T12:19:20.160Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T12:19:20.160Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T12:19:20.160Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T12:19:20.160Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T12:19:20.160Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T12:19:20.161Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T12:19:20.161Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T12:19:20.161Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T12:19:20.161Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T12:19:20.162Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T12:19:20.162Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T12:19:20.162Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T12:19:20.163Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T12:19:20.163Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T12:19:20.163Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T12:19:20.164Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T12:19:20.164Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T12:19:20.164Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T12:19:20.164Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T12:19:20.165Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T12:19:20.165Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T12:19:20.165Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T12:19:20.166Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T12:19:20.166Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T12:19:20.166Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T12:19:20.166Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T12:19:20.167Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T12:19:20.167Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T12:19:20.167Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T12:19:20.167Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T12:19:20.167Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T12:19:20.168Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T12:19:20.168Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T12:19:20.168Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T12:19:20.168Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T12:19:20.169Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T12:19:20.169Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T12:19:20.170Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T12:19:20.170Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T12:19:20.170Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T12:19:20.171Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T12:19:20.171Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T12:19:20.171Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T12:19:20.172Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T12:19:20.172Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T12:19:20.172Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T12:19:20.172Z - normal: [build-raw-assets] Start copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T12:19:20.247Z - normal: [build-raw-assets] Finish copying D:\software\cocos\resources\static\default-assets\image\default_sprite_splash.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-internal\image\default_sprite_splash.png
+2017-04-06T12:19:20.276Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\rope.png
+2017-04-06T12:19:20.279Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\catched.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\catched.mp3
+2017-04-06T12:19:20.280Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\2.png
+2017-04-06T12:19:20.289Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\rule.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\rule.png
+2017-04-06T12:19:20.290Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\login.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\login.png
+2017-04-06T12:19:20.291Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-bkg.png
+2017-04-06T12:19:20.293Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-enable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-enable.png
+2017-04-06T12:19:20.294Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\close.png
+2017-04-06T12:19:20.304Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\title.png
+2017-04-06T12:19:20.305Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\badge.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\badge.png
+2017-04-06T12:19:20.306Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit.png
+2017-04-06T12:19:20.307Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-press.png
+2017-04-06T12:19:20.307Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\empty.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\empty.png
+2017-04-06T12:19:20.308Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-left.png
+2017-04-06T12:19:20.308Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-btn.png
+2017-04-06T12:19:20.308Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-s.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-s.png
+2017-04-06T12:19:20.308Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\score-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\score-bkg.png
+2017-04-06T12:19:20.309Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\left.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\left.png
+2017-04-06T12:19:20.309Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-bkg.png
+2017-04-06T12:19:20.309Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-m.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-m.png
+2017-04-06T12:19:20.309Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\4.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\4.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-line-through.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-line-through.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-fail.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-fail.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\rule\rule-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\rule\rule-title.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\pit-around.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\pit-around.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-body.png
+2017-04-06T12:19:20.310Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\30.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\30.png
+2017-04-06T12:19:20.311Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods-item-btn-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods-item-btn-bkg.png
+2017-04-06T12:19:20.311Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-normal.png
+2017-04-06T12:19:20.311Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\btn.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\btn.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\close.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\close.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\body.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\body.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\audio\click.mp3 to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\audio\click.mp3
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-press.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-press.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\5.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\5.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\1.png
+2017-04-06T12:19:20.312Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\record\title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\record\title.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-title.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-title.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-disable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-disable.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\border.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\border.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\btn-start-normal.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\btn-start-normal.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-2.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-2.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-1.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-1.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\btn-bkg-unable.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\btn-bkg-unable.png
+2017-04-06T12:19:20.313Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-right.png
+2017-04-06T12:19:20.314Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\right.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\right.png
+2017-04-06T12:19:20.314Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift.png
+2017-04-06T12:19:20.314Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\add.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\add.png
+2017-04-06T12:19:20.314Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\match-l.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\match-l.png
+2017-04-06T12:19:20.316Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\result-win.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\result-win.png
+2017-04-06T12:19:20.318Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\bkg.png
+2017-04-06T12:19:20.320Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\public\bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\public\bkg.png
+2017-04-06T12:19:20.320Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\glow.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\glow.png
+2017-04-06T12:19:20.320Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\coupon.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\coupon.png
+2017-04-06T12:19:20.321Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\gift-3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\gift-3.png
+2017-04-06T12:19:20.321Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\shop\goods\3.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\shop\goods\3.png
+2017-04-06T12:19:20.322Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\game\claw\gold-rope.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\game\claw\gold-rope.png
+2017-04-06T12:19:20.322Z - normal: [build-raw-assets] Finish copying D:\workspace\web\work\games\prize-claw\assets\resources\image\login\login-input-bkg.png to D:\workspace\web\work\games\prize-claw\build\web-mobile\res\raw-assets\resources\image\login\login-input-bkg.png
+2017-04-06T12:19:20.323Z - normal: Finish building raw assets
+2017-04-06T12:19:20.330Z - normal: Generating main.js from D:\software\cocos\resources\static\build-templates\shares\main.js
+2017-04-06T12:19:20.341Z - normal: Generating html from D:\software\cocos\resources\static\build-templates\web-mobile\template\index.html
+2017-04-06T12:19:20.348Z - normal: Built to "D:\workspace\web\work\games\prize-claw\build\web-mobile" successfully

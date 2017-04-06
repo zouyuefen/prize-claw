@@ -8,14 +8,9 @@
     "balance",
     "avatar",
     "nickname",
-    "_main",
-    "main",
-    "cc",
-    "director",
-    "getScene",
-    "getChildByName",
-    "getComponent",
     "update",
+    "window",
+    "_main",
     "api",
     "getUserInfo",
     "then",
@@ -26,12 +21,14 @@
     "profileImg",
     "game",
     "score",
+    "getComponent",
+    "cc",
     "Label",
     "string"
   ],
-  "mappings": ";;;;;kBAAe;AACXA,WAAO,IADI;AAEXC,aAAS,CAFE;AAGXC,YAAQ,IAHG;AAIXC,cAAU,IAJC;AAKXC,WAAO,IALI;;AAOX,QAAIC,IAAJ,GAAW;AACP,YAAI,CAAC,KAAKD,KAAV,EAAiB;AACb,iBAAKA,KAAL,GAAaE,GAAGC,QAAH,CAAYC,QAAZ,GACZC,cADY,CACG,MADH,EACWC,YADX,CACwB,MADxB,CAAb;AAEA,mBAAO,KAAKN,KAAZ;AACH;AACD,eAAO,KAAKA,KAAZ;AACH,KAdU;;AAgBXO,UAhBW,oBAgBF;AAAA;;AAEL,aAAKN,IAAL,CAAUO,GAAV,CAAcC,WAAd,GACCC,IADD,CACM,eAAO;AACT,gBAAIC,IAAIC,IAAJ,CAASC,EAAb,EAAiB;AACb,sBAAKd,QAAL,GAAgBY,IAAIC,IAAJ,CAASE,CAAT,CAAWf,QAA3B;AACA,sBAAKF,OAAL,GAAec,IAAIC,IAAJ,CAASE,CAAT,CAAWjB,OAA1B;AACA,sBAAKD,KAAL,GAAae,IAAIC,IAAJ,CAASE,CAAT,CAAWlB,KAAxB;AACA,sBAAKE,MAAL,GAAca,IAAIC,IAAJ,CAASE,CAAT,CAAWC,UAAzB;;AAEA,sBAAKd,IAAL,CAAUe,IAAV,CAAeC,KAAf,CAAqBX,YAArB,CAAkCJ,GAAGgB,KAArC,EACKC,MADL,GACc,MAAKtB,OADnB;AAEH;AACJ,SAXD;AAaH;AA/BU,C",
+  "mappings": ";;;;;kBAAe;AACXA,WAAO,IADI;AAEXC,aAAS,CAFE;AAGXC,YAAQ,IAHG;AAIXC,cAAU,IAJC;;AAMXC,UANW,oBAMF;AAAA;;AAELC,eAAOC,KAAP,CAAaC,GAAb,CAAiBC,WAAjB,GACCC,IADD,CACM,eAAO;AACT,gBAAIC,IAAIC,IAAJ,CAASC,EAAb,EAAiB;AACb,sBAAKT,QAAL,GAAgBO,IAAIC,IAAJ,CAASE,CAAT,CAAWV,QAA3B;AACA,sBAAKF,OAAL,GAAeS,IAAIC,IAAJ,CAASE,CAAT,CAAWZ,OAA1B;AACA,sBAAKD,KAAL,GAAaU,IAAIC,IAAJ,CAASE,CAAT,CAAWb,KAAxB;AACA,sBAAKE,MAAL,GAAcQ,IAAIC,IAAJ,CAASE,CAAT,CAAWC,UAAzB;;AAEAT,uBAAOC,KAAP,CAAaS,IAAb,CAAkBC,KAAlB,CAAwBC,YAAxB,CAAqCC,GAAGC,KAAxC,EACKC,MADL,GACc,MAAKnB,OADnB;AAEH;AACJ,SAXD;AAaH;AArBU,C",
   "file": "unknown",
   "sourcesContent": [
-    "export default {\r\n    phone: null,\r\n    balance: 0,\r\n    avatar: null,\r\n    nickname: null,\r\n    _main: null,\r\n\r\n    get main() {\r\n        if (!this._main) {\r\n            this._main = cc.director.getScene()\r\n            .getChildByName('main').getComponent('main')\r\n            return this._main\r\n        }\r\n        return this._main\r\n    },\r\n\r\n    update() {\r\n\r\n        this.main.api.getUserInfo()\r\n        .then(res => {\r\n            if (res.data.ok) {\r\n                this.nickname = res.data.r.nickname\r\n                this.balance = res.data.r.balance\r\n                this.phone = res.data.r.phone\r\n                this.avatar = res.data.r.profileImg\r\n\r\n                this.main.game.score.getComponent(cc.Label)\r\n                    .string = this.balance\r\n            }\r\n        })\r\n\r\n    }\r\n}\r\n"
+    "export default {\r\n    phone: null,\r\n    balance: 0,\r\n    avatar: null,\r\n    nickname: null,\r\n\r\n    update() {\r\n\r\n        window._main.api.getUserInfo()\r\n        .then(res => {\r\n            if (res.data.ok) {\r\n                this.nickname = res.data.r.nickname\r\n                this.balance = res.data.r.balance\r\n                this.phone = res.data.r.phone\r\n                this.avatar = res.data.r.profileImg\r\n\r\n                window._main.game.score.getComponent(cc.Label)\r\n                    .string = this.balance\r\n            }\r\n        })\r\n\r\n    }\r\n}\r\n"
   ]
 }

@@ -36,16 +36,9 @@ exports.default = cc.Class({
             type: cc.Node
         }
     },
+
     onLoad: function onLoad() {
-        this.init();
         this.listen();
-    },
-    init: function init() {
-        /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene().getChildByName('main').getComponent('main');
     },
     listen: function listen() {
         var _this = this;
@@ -74,11 +67,13 @@ exports.default = cc.Class({
         this.loginBtn.on(cc.Node.EventType.TOUCH_END, function () {
             _this.loginBtn.scale = 1;
             _this.hide();
-            _this.main.login.show();
+            window._main.login.show();
         });
     },
     show: function show() {
         var _this2 = this;
+
+        window._main.api.monitor('抓去记录', 13);
 
         if (this.node.active) this.node.opacity = 0;else {
             this.node.active = true;
@@ -86,7 +81,7 @@ exports.default = cc.Class({
         }
         this.node.runAction(cc.fadeIn(.5));
 
-        if (!this.main.user.phone) {
+        if (!window._main.user.phone) {
             this.other.active = true;
             this.layout.active = false;
         } else {
@@ -94,7 +89,7 @@ exports.default = cc.Class({
             this.other.active = false;
         }
 
-        this.main.api.grabHistory().then(function (res) {
+        window._main.api.grabHistory().then(function (res) {
             if (res.data.ok) {
                 if (res.data.r.length === 0) {
                     return;
@@ -127,7 +122,7 @@ exports.default = cc.Class({
                         if (err) console.log(err);else {
                             var img = child.getChildByName('image');
                             img.getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(texture);
-                            if (item.goodsType === 1) img.scale = .3;
+                            if (item.goodsType === 1) img.scale = .3;else img.scale = 1;
                         }
                         if (++i < list.length) load();
                     });

@@ -27,18 +27,7 @@ export default cc.Class({
     },
 
     onLoad() {
-        this.init()
         this.listen()
-    },
-
-    init() {
-        /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene()
-            .getChildByName('main').getComponent('main')
-
     },
 
     listen() {
@@ -75,7 +64,7 @@ export default cc.Class({
             () => {
                 this.loginBtn.scale = 1
                 this.hide()
-                this.main.login.show()
+                window._main.login.show()
             }
         )
 
@@ -101,7 +90,7 @@ export default cc.Class({
                 this.glow.runAction(cc.repeatForever(cc.rotateBy(3, 360)))
 
                 //是否登录
-                if (this.main.user.phone) {
+                if (window._main.user.phone) {
                     this.loginBtn.active = false
                 } else {
                     this.loginBtn.active = true

@@ -235,8 +235,8 @@
     "relativePath": "resources\\image\\game\\score-bkg.png"
   },
   "4cfae95f-3c26-4092-8fa4-150777a48293": {
-    "asset": 1491472534633,
-    "meta": 1491472534677,
+    "asset": 1491481137453,
+    "meta": 1491481137490,
     "relativePath": "scene\\main.fire"
   },
   "270d095a-bc61-4ce7-9d8d-f1c3d176b6ee": {
@@ -515,8 +515,8 @@
     "relativePath": "resources\\image\\record\\title.png"
   },
   "f988dd7b-a700-48f7-9ab6-ecf1fb924cee": {
-    "asset": 1491457893868,
-    "meta": 1491457893903,
+    "asset": 1491479363053,
+    "meta": 1491479363063,
     "relativePath": "prefab\\record-item.prefab"
   },
   "7f3de377-abd1-4223-b7c8-882937b68caa": {
@@ -574,11 +574,6 @@
     "meta": 1490941052770,
     "relativePath": "resources\\image\\game\\result-win.png"
   },
-  "d1fdc61e-6331-4872-9913-2a493d89b878": {
-    "asset": 1490955920796,
-    "meta": 1490955922794,
-    "relativePath": "js\\user.js"
-  },
   "0b544410-5e46-4ae6-8e4d-481315135fc3": {
     "asset": 1491030045017,
     "meta": 1491030074360,
@@ -598,11 +593,6 @@
     "asset": 1491315144055,
     "meta": 1491315271366,
     "relativePath": "resources\\image\\game\\border.png"
-  },
-  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
-    "asset": 1491362459507,
-    "meta": 1491362549508,
-    "relativePath": "js\\api.js"
   },
   "6659664a-7d51-465c-8747-b5b06b68a89a": {
     "asset": 1491375105416,
@@ -639,36 +629,6 @@
     "meta": 1491379795360,
     "relativePath": "js\\claw.js"
   },
-  "235d93f4-9ec0-45d8-acb1-f9df85a0cdae": {
-    "asset": 1491380399434,
-    "meta": 1491380439675,
-    "relativePath": "js\\main.js"
-  },
-  "747c711c-7e04-4d5b-aa84-24d13950e421": {
-    "asset": 1491381054995,
-    "meta": 1491381058340,
-    "relativePath": "js\\login.js"
-  },
-  "3da57a9b-7d04-43fd-8df3-a505dfb8a31f": {
-    "asset": 1491381312686,
-    "meta": 1491381790766,
-    "relativePath": "js\\prompt.js"
-  },
-  "18034ae2-5529-4fe6-9599-81ac68bd7447": {
-    "asset": 1491383225815,
-    "meta": 1491383234761,
-    "relativePath": "js\\collision.js"
-  },
-  "6b7cc14f-e704-4dfe-a9b3-56df2bdf8a92": {
-    "asset": 1491456077165,
-    "meta": 1491456078875,
-    "relativePath": "js\\record.js"
-  },
-  "1258dc28-c072-47a7-8771-9d560d4c115d": {
-    "asset": 1491461531330,
-    "meta": 1491461533148,
-    "relativePath": "js\\rule.js"
-  },
   "bb50b9d6-868e-4b27-bd89-59143c25ac94": {
     "asset": 1491467320859,
     "meta": 1491467339912,
@@ -684,14 +644,54 @@
     "meta": 1491467467822,
     "relativePath": "resources\\image\\shop\\title.png"
   },
-  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
-    "asset": 1491468327769,
-    "meta": 1491468384497,
-    "relativePath": "js\\shop.js"
+  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
+    "asset": 1491479240627,
+    "meta": 1491479247105,
+    "relativePath": "js\\api.js"
+  },
+  "235d93f4-9ec0-45d8-acb1-f9df85a0cdae": {
+    "asset": 1491480442247,
+    "meta": 1491480488916,
+    "relativePath": "js\\main.js"
   },
   "be740382-f997-4b25-b78c-b18596ff2e74": {
-    "asset": 1491472419577,
-    "meta": 1491472422574,
+    "asset": 1491480721772,
+    "meta": 1491480729097,
     "relativePath": "js\\game.js"
+  },
+  "1258dc28-c072-47a7-8771-9d560d4c115d": {
+    "asset": 1491480573530,
+    "meta": 1491480729368,
+    "relativePath": "js\\rule.js"
+  },
+  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
+    "asset": 1491480696787,
+    "meta": 1491480729369,
+    "relativePath": "js\\shop.js"
+  },
+  "18034ae2-5529-4fe6-9599-81ac68bd7447": {
+    "asset": 1491480785366,
+    "meta": 1491480913384,
+    "relativePath": "js\\collision.js"
+  },
+  "747c711c-7e04-4d5b-aa84-24d13950e421": {
+    "asset": 1491480851064,
+    "meta": 1491480913475,
+    "relativePath": "js\\login.js"
+  },
+  "3da57a9b-7d04-43fd-8df3-a505dfb8a31f": {
+    "asset": 1491480811929,
+    "meta": 1491480913508,
+    "relativePath": "js\\prompt.js"
+  },
+  "d1fdc61e-6331-4872-9913-2a493d89b878": {
+    "asset": 1491480881959,
+    "meta": 1491480913509,
+    "relativePath": "js\\user.js"
+  },
+  "6b7cc14f-e704-4dfe-a9b3-56df2bdf8a92": {
+    "asset": 1491481097939,
+    "meta": 1491481099961,
+    "relativePath": "js\\record.js"
   }
 }

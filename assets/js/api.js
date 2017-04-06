@@ -126,11 +126,12 @@ function Api() {
         })
     }
 
-    this.monitor = function(event, eventType) {
+    this.monitor = function(event, eventType, eventTypeTab=0) {
         axios.get(`${SERVER}/event/monitor`, {
             params: {
                 event,
-                eventType
+                eventType,
+                eventTypeTab
             }
         })
     }

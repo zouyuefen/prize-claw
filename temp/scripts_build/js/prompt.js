@@ -2,7 +2,7 @@
 cc._RFpush(module, '3da57qbfQRD/Y3zpQXfuKMf', 'prompt');
 // js\prompt.js
 
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -36,15 +36,7 @@ exports.default = cc.Class({
     },
 
     onLoad: function onLoad() {
-        this.init();
         this.listen();
-    },
-    init: function init() {
-        /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene().getChildByName('main').getComponent('main');
     },
     listen: function listen() {
         var _this = this;
@@ -68,7 +60,7 @@ exports.default = cc.Class({
         this.loginBtn.on(cc.Node.EventType.TOUCH_END, function () {
             _this.loginBtn.scale = 1;
             _this.hide();
-            _this.main.login.show();
+            window._main.login.show();
         });
     },
     show: function show(uri) {
@@ -89,7 +81,7 @@ exports.default = cc.Class({
                 _this2.glow.runAction(cc.repeatForever(cc.rotateBy(3, 360)));
 
                 //是否登录
-                if (_this2.main.user.phone) {
+                if (window._main.user.phone) {
                     _this2.loginBtn.active = false;
                 } else {
                     _this2.loginBtn.active = true;

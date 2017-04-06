@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 169,
-      "y": 247,
+      "x": 143,
+      "y": 0,
       "width": 1382,
       "height": 784,
       "layout": {
@@ -66,7 +66,7 @@
         "node-library"
       ]
     },
-    "window-1491472539468": {
+    "window-1491481143761": {
       "main": false,
       "url": "unpack://static/window.html",
       "windowType": "dockable",

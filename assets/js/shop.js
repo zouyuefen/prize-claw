@@ -30,13 +30,6 @@ export default cc.Class({
 
     init() {
         /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene()
-            .getChildByName('main').getComponent('main')
-
-        /*
         * 创建空借点
         * 抵消 layout 的 coupon
         */
@@ -76,7 +69,7 @@ export default cc.Class({
 
     show() {
 
-        this.main.api.monitor('获取金币', 7)
+        // window._main.api.monitor('获取金币', 7)
 
         if (this.node.active) this.node.opacity = 0
         else {
@@ -87,8 +80,7 @@ export default cc.Class({
 
 
 
-
-        this.main.api.goodsList()
+        window._main.api.goodsList()
         .then(res => {
             if (res.data.ok) {
                 if (res.data.r.length === 0) {
@@ -151,12 +143,14 @@ export default cc.Class({
                             cc.Node.EventType.TOUCH_END,
                             event => {
                                 event.target.scale = 1
-                                this.main.api.purchase(child._goodsId)
+                                window._main.api.purchase(child._goodsId)
                                 .then(res => {
                                     if (res.data.ok) {
                                         location.href = res.data.r
                                     }
                                 })
+
+                                window._main.api.monitor(item.name, 8, item.id)
                             }
                         )
                     }

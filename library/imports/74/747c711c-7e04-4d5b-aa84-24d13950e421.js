@@ -53,8 +53,6 @@ exports.default = cc.Class({
     },
 
     init: function init() {
-        this.main = cc.director.getScene().getChildByName('main').getComponent('main');
-
         // 网络请求状态
         this.state = {
             wait: false,
@@ -63,7 +61,7 @@ exports.default = cc.Class({
 
         this.phoneInput = this.phone.getComponent(cc.EditBox);
         this.codeInput = this.code.getComponent(cc.EditBox);
-        this.main.shop.node.zIndex = 1;
+        window._main.shop.node.zIndex = 1;
     },
     countDown: function countDown() {
         var _this = this;
@@ -121,7 +119,7 @@ exports.default = cc.Class({
 
             _this2.state.wait = true;
 
-            _this2.main.api.getCaptcha(_this2.phoneInput.string).then(function (res) {
+            window._main.api.getCaptcha(_this2.phoneInput.string).then(function (res) {
                 if (res.data.ok) {
                     // 启动倒计时
                     _this2.state.time = 60;
@@ -145,9 +143,9 @@ exports.default = cc.Class({
         this.submit.on(cc.Node.EventType.TOUCH_END, function () {
             _this2.submit.scale = 1;
 
-            _this2.main.api.bindPhone(_this2.phoneInput.string, _this2.codeInput.string).then(function (res) {
+            window._main.api.bindPhone(_this2.phoneInput.string, _this2.codeInput.string).then(function (res) {
                 if (res.data.ok) {
-                    _this2.main.user.phone = _this2.phoneInput.string;
+                    window._main.user.phone = _this2.phoneInput.string;
                     _this2.hide();
                     _this2.codeInput.string = '';
                     _this2.phoneInput.string = '';

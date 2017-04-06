@@ -16,15 +16,12 @@ export default cc.Class({
     },
 
     onLoad() {
-        this.init()
         this.listen()
     },
 
-    init() {
-        this.node.active = false
-    },
-
     show() {
+        window._main.api.monitor('规则界面', 14)
+
         if (this.node.active) this.node.opacity = 0
         else {
             this.node.active = true

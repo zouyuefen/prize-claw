@@ -133,6 +133,18 @@ function Api() {
             }
         });
     };
+
+    this.monitor = function (event, eventType) {
+        var eventTypeTab = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
+        axios.get(SERVER + '/event/monitor', {
+            params: {
+                event: event,
+                eventType: eventType,
+                eventTypeTab: eventTypeTab
+            }
+        });
+    };
 }
 
 Api.prototype = Base;

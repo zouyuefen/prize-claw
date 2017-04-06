@@ -48,9 +48,6 @@ export default cc.Class({
     },
 
     init() {
-        this.main = cc.director.getScene()
-            .getChildByName('main').getComponent('main')
-
         // 网络请求状态
         this.state = {
             wait: false,
@@ -59,7 +56,7 @@ export default cc.Class({
 
         this.phoneInput = this.phone.getComponent(cc.EditBox)
         this.codeInput = this.code.getComponent(cc.EditBox)
-        this.main.shop.node.zIndex = 1
+        window._main.shop.node.zIndex = 1
     },
 
     countDown() {
@@ -129,7 +126,7 @@ export default cc.Class({
 
                 this.state.wait = true
 
-                this.main.api.getCaptcha(this.phoneInput.string)
+                window._main.api.getCaptcha(this.phoneInput.string)
                 .then(res => {
                     if (res.data.ok) {
                         // 启动倒计时
@@ -163,12 +160,12 @@ export default cc.Class({
             () => {
                 this.submit.scale = 1
 
-                this.main.api.bindPhone(
+                window._main.api.bindPhone(
                     this.phoneInput.string,
                     this.codeInput.string
                 ).then(res => {
                     if (res.data.ok) {
-                        this.main.user.phone = this.phoneInput.string
+                        window._main.user.phone = this.phoneInput.string
                         this.hide()
                         this.codeInput.string = ''
                         this.phoneInput.string = ''

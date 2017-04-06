@@ -1,27 +1,20 @@
 cc.Class({
     extends: cc.Component,
-    onLoad() {
-        this.init()
-    },
 
-    init() {
-        this.main = cc.director.getScene()
-            .getChildByName('main').getComponent('main')
-    },
     onCollisionEnter(other, self) {
         /* 检测爪子状态
         * 非 grab 状态
         * 不作碰撞处理
         */
-        if (this.main.game.claw.state !== 'grab') return
+        if (window._main.game.claw.state !== 'grab') return
         if (self.node.name === 'left') {
-            this.main.game.claw.catched = this.checkLeft(other, self)
+            window._main.game.claw.catched = this.checkLeft(other, self)
         } else if (self.node.name === 'right') {
-            this.main.game.claw.catched = this.checkRight(other, self)
+            window._main.game.claw.catched = this.checkRight(other, self)
         } else console.error('请检查组件名设置')
 
-        if (this.main.game.claw.catched) {
-            this.main.game.claw.gift = other.node
+        if (window._main.game.claw.catched) {
+            window._main.game.claw.gift = other.node
         }
     },
     onCollisionStay(other, self) {

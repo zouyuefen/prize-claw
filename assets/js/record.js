@@ -27,19 +27,12 @@ export default cc.Class({
             type: cc.Node
         }
     },
+
+
     onLoad() {
-        this.init()
         this.listen()
     },
 
-    init() {
-        /*
-        * 初始化时
-        * 获取 main 组件
-        */
-        this.main = cc.director.getScene()
-            .getChildByName('main').getComponent('main')
-    },
 
     listen() {
         this.mask.on(
@@ -80,12 +73,14 @@ export default cc.Class({
             () => {
                 this.loginBtn.scale = 1
                 this.hide()
-                this.main.login.show()
+                window._main.login.show()
             }
         )
     },
 
     show() {
+        window._main.api.monitor('抓去记录', 13)
+
         if (this.node.active) this.node.opacity = 0
         else {
             this.node.active = true
@@ -93,7 +88,7 @@ export default cc.Class({
         }
         this.node.runAction(cc.fadeIn(.5))
 
-        if (!this.main.user.phone) {
+        if (!window._main.user.phone) {
             this.other.active = true
             this.layout.active = false
         } else {
@@ -101,7 +96,7 @@ export default cc.Class({
             this.other.active = false
         }
 
-        this.main.api.grabHistory()
+        window._main.api.grabHistory()
         .then(res => {
             if (res.data.ok) {
                 if (res.data.r.length === 0) {
@@ -143,6 +138,7 @@ export default cc.Class({
                             img.getComponent(cc.Sprite)
                                 .spriteFrame = new cc.SpriteFrame(texture)
                             if (item.goodsType === 1) img.scale = .3
+                            else img.scale = 1
                         }
                         if (++i < list.length) load()
                     })
