@@ -30,12 +30,26 @@ var _user2 = _interopRequireDefault(_user);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var script = document.createElement('script');
-document.body.appendChild(script);
-script.onload = function () {
-    axios.defaults.withCredentials = true;
+var addScript = function addScript(uri) {
+    var script = document.createElement('script');
+    document.body.appendChild(script);
+    script.src = uri;
+    return {
+        then: function then(func) {
+            func ? script.onload = func : null;
+        }
+    };
 };
-script.src = '//cdn.yoosh.tv/js/axios.min.js';
+
+addScript('//cdn.yoosh.tv/js/axios.min.js').then(function () {
+    axios.defaults.withCredentials = true;
+});
+
+if (location.search.includes('alpha')) {
+    addScript('//cdn.yoosh.tv/js/eruda.min.js').then(function () {
+        return eruda.init();
+    });
+}
 
 var openCollision = function openCollision() {
     var manager = cc.director.getCollisionManager();
@@ -89,6 +103,8 @@ cc.Class({
 
         this.spriteFrames = this.node.getComponent('spriteFrame');
 
+        this.game.node.active = false;
+
         _api2.default.getUserInfo().then(function (res) {
             if (!res.data.ok) {
                 var code = _api2.default.getParam('code');
@@ -102,6 +118,8 @@ cc.Class({
                             _this.user = _user2.default;
 
                             _this.game.score.getComponent(cc.Label).string = _user2.default.balance;
+
+                            _this.game.node.active = true;
                         }
                     });
                 } else _api2.default.authorize();
@@ -113,6 +131,8 @@ cc.Class({
                 _this.user = _user2.default;
 
                 _this.game.score.getComponent(cc.Label).string = _user2.default.balance;
+
+                _this.game.node.active = true;
             }
         });
     }

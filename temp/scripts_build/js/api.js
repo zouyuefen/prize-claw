@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 */
 
 var APPID = 'wxa95eee48a3ac58c6',
-    SERVER = 'http://doll.yoosh.tv';
+    SERVER = '//doll.yoosh.tv';
 
 var Base = {
     getCookie: function getCookie(key) {
@@ -48,7 +48,7 @@ function Api() {
             appid: APPID,
             redirect_uri: 'https://game.yoosh.tv/login.html',
             response_type: 'code',
-            scope: 'snsapi_userinfo',
+            scope: 'snsapi_base',
             state: location.href
         };
 
@@ -144,6 +144,14 @@ function Api() {
                 eventTypeTab: eventTypeTab
             }
         });
+    };
+
+    this.onEvent = function () {
+        if (TDAPP) {
+            var _TDAPP;
+
+            (_TDAPP = TDAPP).onEvent.apply(_TDAPP, arguments);
+        }
     };
 }
 

@@ -79,6 +79,9 @@ exports.default = cc.Class({
 
         // 抓取结果
         this.results = null;
+
+        // 等待接口而中止释放操作
+        this.pause = false;
     },
     grab: function grab(func) {
         if (this.state !== 'fall') return;
@@ -101,50 +104,60 @@ exports.default = cc.Class({
         this.node.runAction(cc.sequence(this.actions.move, cc.callFunc(function () {
             _this.grab(_this.rise.bind(_this));
         })));
+        window._main.api.monitor('开始按钮', 6);
+    },
+    over: function over() {
+        var _this2 = this;
+
+        // 重置 pause
+        this.pause = false;
+        if (this.catched) {
+            if (!this.results) {
+                this.gift.zIndex = 0;
+                this.lose();
+            } else {
+                // 重置 gift zIndex < pit-around
+                if (this.results.grabResultInt === 2) {
+                    this.gift.zIndex = 0;
+                    this.lose();
+                    this.main.game.showResult(this.results);
+                } else if (this.results.grabResultInt === 3) {
+                    this.win();
+
+                    if (this.results.goods.type === 0) {
+                        this.main.game.showResult(this.results);
+                    } else {
+                        // 抓到实物的效果
+                        this.main.game.prompt.show(this.results.goods.img);
+                    }
+                }
+            }
+        } else {
+            this.free();
+            /*
+            * 请求抓取处理接口
+            */
+            this.wait = true;
+            this.main.api.grab(null, this.main.game.matchId).then(function (res) {
+                _this2.wait = false;
+                if (res.data.ok) _this2.results = res.data.r;else _this2.results = null;
+                _this2.main.user.update();
+            }).catch(function (err) {
+                _this2.wait = false;
+                _this2.results = null;
+                _this2.main.user.update();
+            });
+        }
     },
     rise: function rise() {
-        var _this2 = this;
+        var _this3 = this;
 
         if (this.state !== 'grab') return;
         this.state = 'rise';
         this.node.runAction(cc.sequence(this.actions.up, cc.callFunc(function () {
-            if (_this2.catched) {
-                if (!_this2.results) {
-                    _this2.gift.zIndex = 0;
-                    _this2.lose();
-                } else {
-                    // 重置 gift zIndex < pit-around
-                    if (_this2.results.grabResultInt === 2) {
-                        _this2.gift.zIndex = 0;
-                        _this2.lose();
-                        _this2.main.game.showResult(_this2.results);
-                    } else if (_this2.results.grabResultInt === 3) {
-                        _this2.win();
-
-                        if (_this2.results.goods.type === 0) {
-                            _this2.main.game.showResult(_this2.results);
-                        } else {
-                            // 抓到实物的效果
-                            _this2.main.game.prompt.show(_this2.results.goods.img);
-                        }
-                    }
-                }
-            } else {
-                _this2.free();
-                /*
-                * 请求抓取处理接口
-                */
-                _this2.wait = true;
-                _this2.main.api.grab(null, _this2.main.game.matchId).then(function (res) {
-                    _this2.wait = false;
-                    if (res.data.ok) _this2.results = res.data.r;else _this2.results = null;
-                    _this2.main.user.update();
-                }).catch(function (err) {
-                    _this2.wait = false;
-                    _this2.results = null;
-                    _this2.main.user.update();
-                });
-            }
+            if (_this3.wait) {
+                _this3.pause = true;
+            } else _this3.over();
         })));
     },
     random: function random() {
@@ -155,7 +168,7 @@ exports.default = cc.Class({
         this.free();
     },
     lose: function lose() {
-        var _this3 = this;
+        var _this4 = this;
 
         /*
         * 掉落
@@ -166,12 +179,12 @@ exports.default = cc.Class({
         // 清除 gift action
         this.gift.stopAllActions();
         this.gift.runAction(cc.sequence(this.actions.flop, cc.callFunc(function () {
-            _this3.main.gift.putItem(_this3.gift);
-            _this3.state = 'free';
+            _this4.main.gift.putItem(_this4.gift);
+            _this4.state = 'free';
         })));
     },
     catchAnimate: function catchAnimate() {
-        var _this4 = this;
+        var _this5 = this;
 
         if (this.catchAnimated) return;
         this.catchAnimated = true;
@@ -184,13 +197,16 @@ exports.default = cc.Class({
         */
         this.wait = true;
         this.main.api.grab(this.gift._goodsId, this.main.game.matchId).then(function (res) {
-            _this4.wait = false;
-            if (res.data.ok) _this4.results = res.data.r;else _this4.results = null;
-            _this4.main.user.update();
+            _this5.wait = false;
+            if (res.data.ok) _this5.results = res.data.r;else _this5.results = null;
+            _this5.main.user.update();
+
+            if (_this5.pause) _this5.over();
         }).catch(function (err) {
-            _this4.wait = false;
-            _this4.results = null;
-            _this4.main.user.update();
+            _this5.wait = false;
+            _this5.results = null;
+            _this5.main.user.update();
+            if (_this5.pause) _this5.over();
         });
     },
     update: function update() {

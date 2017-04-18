@@ -69,7 +69,7 @@ export default cc.Class({
 
     show() {
 
-        // window._main.api.monitor('获取金币', 7)
+        window._main.api.monitor('获取金币', 7)
 
         if (this.node.active) this.node.opacity = 0
         else {
@@ -121,7 +121,7 @@ export default cc.Class({
                         .getComponent(cc.Label).string = `${item.quantity}金币`
 
                     child.getChildByName('btn').getChildByName('text')
-                        .getComponent(cc.Label).string = `￥${item.price / 100}`
+                        .getComponent(cc.Label).string = `￥${(item.price / 100).toFixed(2)}`
 
                     child.getChildByName('coupon').active =
                     child.getChildByName('layout').getChildByName('less').active =

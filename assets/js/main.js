@@ -7,12 +7,29 @@ import api from 'api'
 import user from 'user'
 
 
-const script = document.createElement('script')
-document.body.appendChild(script)
-script.onload = function() {
-    axios.defaults.withCredentials = true
+const addScript = uri => {
+    const script = document.createElement('script')
+    document.body.appendChild(script)
+    script.src = uri
+    return {
+        then(func) {
+            func ? script.onload = func : null
+        }
+    }
+
 }
-script.src = '//cdn.yoosh.tv/js/axios.min.js'
+
+addScript('//cdn.yoosh.tv/js/axios.min.js')
+.then(() => {
+    axios.defaults.withCredentials = true
+})
+
+
+if (location.search.includes('alpha')) {
+    addScript('//cdn.yoosh.tv/js/eruda.min.js')
+    .then(() => eruda.init())
+}
+
 
 
 
@@ -56,6 +73,7 @@ cc.Class({
         }
     },
     onLoad() {
+
         // 开启碰撞检测
         openCollision()
 
@@ -68,6 +86,8 @@ cc.Class({
         this.api = api
 
         this.spriteFrames = this.node.getComponent('spriteFrame')
+
+        this.game.node.active = false
 
         api.getUserInfo()
         .then(res => {
@@ -85,6 +105,8 @@ cc.Class({
 
                             this.game.score.getComponent(cc.Label)
                                 .string = user.balance
+
+                            this.game.node.active = true
                         }
                     })
                 } else api.authorize()
@@ -97,8 +119,9 @@ cc.Class({
 
                 this.game.score.getComponent(cc.Label)
                     .string = user.balance
+
+                this.game.node.active = true
             }
         })
-
     }
 })

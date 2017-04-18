@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "percent",
+    "default",
+    "type",
+    "Node",
+    "onLoad",
+    "getComponent",
+    "Label",
+    "string",
+    "loader",
+    "onProgress",
+    "part",
+    "total",
+    "director",
+    "loadScene"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACRC,iBAAS;AACLC,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ;AADD,KAHP;;AAULC,YAAQ,kBAAY;AAChB,YAAMJ,UAAU,KAAKA,OAAL,CAAaK,YAAb,CAA0BV,GAAGW,KAA7B,CAAhB;AACAN,gBAAQO,MAAR,GAAiB,IAAjB;AACAZ,WAAGa,MAAH,CAAUC,UAAV,GAAuB,UAACC,IAAD,EAAOC,KAAP,EAAiB;AACpCX,oBAAQO,MAAR,GAAoB,CAAC,EAAE,MAAMG,IAAN,GAAaC,KAAf,CAArB;AACH,SAFD;AAGAhB,WAAGiB,QAAH,CAAYC,SAAZ,CAAsB,MAAtB,EAA8B,YAAM;AAChClB,eAAGa,MAAH,CAAUC,UAAV,GAAuB,IAAvB;AACH,SAFD;AAGH;AAnBI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        percent: {\r\n            default: null,\r\n            type: cc.Node\r\n        }\r\n    },\r\n\r\n    onLoad: function () {\r\n        const percent = this.percent.getComponent(cc.Label)\r\n        percent.string = '0%'\r\n        cc.loader.onProgress = (part, total) => {\r\n            percent.string = `${~~(100 * part / total)}%`\r\n        }\r\n        cc.director.loadScene('main', () => {\r\n            cc.loader.onProgress = null\r\n        })\r\n    }\r\n});\r\n"
+  ]
+}

@@ -82,6 +82,7 @@ exports.default = cc.Class({
         this.init();
         this.listen();
         window._main.api.monitor('进入游戏', 1);
+        window._main.api.onEvent('进入游戏');
     },
     init: function init() {
 
@@ -210,8 +211,6 @@ exports.default = cc.Class({
             if (_this3.matchId === null) alert('请先下注');else if (window._main.user.balance < _this3.stakeValue) {
                 window._main.shop.show();
             } else _this3.claw.fall();
-
-            window._main.api.monitor('开始按钮', 6);
         });
 
         // 下注按钮
@@ -253,16 +252,18 @@ exports.default = cc.Class({
                 // 下注
                 _this3.setStake(btn._index);
 
-                switch (btn._index) {
-                    case 0:
-                        window._main.api.monitor('500场', 3);
-                        break;
-                    case 1:
-                        window._main.api.monitor('1000场', 4);
-                        break;
-                    case 2:
-                        window._main.api.monitor('2000场', 5);
-                        break;
+                if (btn._matchId !== _this3.matchId) {
+                    switch (btn._index) {
+                        case 0:
+                            window._main.api.monitor('500场', 3);
+                            break;
+                        case 1:
+                            window._main.api.monitor('1000场', 4);
+                            break;
+                        case 2:
+                            window._main.api.monitor('2000场', 5);
+                            break;
+                    }
                 }
 
                 // 设置 当前场次 id

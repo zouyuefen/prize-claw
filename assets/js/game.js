@@ -66,6 +66,7 @@ export default cc.Class({
         this.init()
         this.listen()
         window._main.api.monitor('进入游戏', 1)
+        window._main.api.onEvent('进入游戏')
     },
     init() {
 
@@ -220,8 +221,6 @@ export default cc.Class({
                     window._main.shop.show()
                 }
                 else this.claw.fall()
-
-                window._main.api.monitor('开始按钮', 6)
             }
         )
 
@@ -273,16 +272,18 @@ export default cc.Class({
                     // 下注
                     this.setStake(btn._index)
 
-                    switch(btn._index) {
-                        case 0:
-                            window._main.api.monitor('500场', 3)
-                            break
-                        case 1:
-                            window._main.api.monitor('1000场', 4)
-                            break
-                        case 2:
-                            window._main.api.monitor('2000场', 5)
-                            break
+                    if (btn._matchId !== this.matchId) {
+                        switch(btn._index) {
+                            case 0:
+                                window._main.api.monitor('500场', 3)
+                                break
+                            case 1:
+                                window._main.api.monitor('1000场', 4)
+                                break
+                            case 2:
+                                window._main.api.monitor('2000场', 5)
+                                break
+                        }
                     }
 
 

@@ -67,7 +67,7 @@ exports.default = cc.Class({
     show: function show() {
         var _this2 = this;
 
-        // window._main.api.monitor('获取金币', 7)
+        window._main.api.monitor('获取金币', 7);
 
         if (this.node.active) this.node.opacity = 0;else {
             this.node.active = true;
@@ -110,7 +110,7 @@ exports.default = cc.Class({
 
                     child.getChildByName('layout').getChildByName('less').getComponent(cc.Label).string = item.quantity + '\u91D1\u5E01';
 
-                    child.getChildByName('btn').getChildByName('text').getComponent(cc.Label).string = '\uFFE5' + item.price / 100;
+                    child.getChildByName('btn').getChildByName('text').getComponent(cc.Label).string = '\uFFE5' + (item.price / 100).toFixed(2);
 
                     child.getChildByName('coupon').active = child.getChildByName('layout').getChildByName('less').active = item.promotionState;
 

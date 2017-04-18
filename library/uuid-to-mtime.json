@@ -225,8 +225,8 @@
     "relativePath": "resources\\image"
   },
   "999bdc83-9443-4f81-9140-25828deae846": {
-    "asset": 1491378466680,
-    "meta": 1491455675785,
+    "asset": 1491630223703,
+    "meta": 1491800117259,
     "relativePath": "js"
   },
   "66021f30-ed75-416a-b3c8-9c10c2869eee": {
@@ -235,8 +235,8 @@
     "relativePath": "resources\\image\\game\\score-bkg.png"
   },
   "4cfae95f-3c26-4092-8fa4-150777a48293": {
-    "asset": 1491481137453,
-    "meta": 1491481137490,
+    "asset": 1491968276556,
+    "meta": 1491968276594,
     "relativePath": "scene\\main.fire"
   },
   "270d095a-bc61-4ce7-9d8d-f1c3d176b6ee": {
@@ -249,20 +249,10 @@
     "meta": 1490605894771,
     "relativePath": "resources\\image\\game\\gift.png"
   },
-  "c3b2d678-ac6d-4d80-a469-3d1cb55a7f68": {
-    "asset": 1490086565206,
-    "meta": 1490774343734,
-    "relativePath": "resources\\image\\game\\btn-start-normal.png"
-  },
   "9579b308-06ce-4df0-898d-2b206f90dcb1": {
     "asset": 1490087408792,
     "meta": 1490087422924,
     "relativePath": "resources\\image\\game\\btn-normal.png"
-  },
-  "30ebb2d6-fbf1-4f9d-a39e-1f78fec12d02": {
-    "asset": 1490088102682,
-    "meta": 1490088135255,
-    "relativePath": "resources\\image\\game\\badge.png"
   },
   "f5a2befd-2b22-4fe3-b775-00153292a81d": {
     "asset": 1490088190846,
@@ -285,8 +275,8 @@
     "relativePath": "resources\\image\\game\\gift-3.png"
   },
   "f10c89dd-5888-495c-9d0d-f8a352631ab1": {
-    "asset": 1490173622382,
-    "meta": 1490257046869,
+    "asset": 1491630014122,
+    "meta": 1491800117259,
     "relativePath": "scene"
   },
   "48ecaa56-50a8-4c8f-a09c-e9e3296fecde": {
@@ -475,8 +465,8 @@
     "relativePath": "resources\\image\\public\\close.png"
   },
   "a7a468de-f857-4ef9-b4a7-aea06dc6a0f3": {
-    "asset": 1491030074341,
-    "meta": 1491055648299,
+    "asset": 1491467467807,
+    "meta": 1491542189222,
     "relativePath": "resources\\image\\shop"
   },
   "41a7c246-592a-4623-8424-cb03dac00c25": {
@@ -485,8 +475,8 @@
     "relativePath": "resources\\image\\record"
   },
   "fc29bc6b-ff40-4d1d-9856-960df1d82a99": {
-    "asset": 1491378542556,
-    "meta": 1491455675787,
+    "asset": 1491811413022,
+    "meta": 1491886850414,
     "relativePath": "resources\\image\\game"
   },
   "057df302-d8a4-4ddd-b983-c25fab180adc": {
@@ -533,11 +523,6 @@
     "asset": 1490679542012,
     "meta": 1490679592607,
     "relativePath": "resources\\image\\game\\pit.png"
-  },
-  "ada3432e-2a1a-48c2-9a10-92bfcf9f561e": {
-    "asset": 1490774176547,
-    "meta": 1490774195120,
-    "relativePath": "resources\\image\\game\\btn-start-press.png"
   },
   "93c20fa8-88c9-435e-9b1f-ef622e4c0239": {
     "asset": 1490871066643,
@@ -624,11 +609,6 @@
     "meta": 1491378542568,
     "relativePath": "resources\\image\\game\\close.png"
   },
-  "aaa417d2-9d27-4320-8451-30bff5bf30e1": {
-    "asset": 1491379793234,
-    "meta": 1491379795360,
-    "relativePath": "js\\claw.js"
-  },
   "bb50b9d6-868e-4b27-bd89-59143c25ac94": {
     "asset": 1491467320859,
     "meta": 1491467339912,
@@ -644,30 +624,10 @@
     "meta": 1491467467822,
     "relativePath": "resources\\image\\shop\\title.png"
   },
-  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
-    "asset": 1491479240627,
-    "meta": 1491479247105,
-    "relativePath": "js\\api.js"
-  },
-  "235d93f4-9ec0-45d8-acb1-f9df85a0cdae": {
-    "asset": 1491480442247,
-    "meta": 1491480488916,
-    "relativePath": "js\\main.js"
-  },
-  "be740382-f997-4b25-b78c-b18596ff2e74": {
-    "asset": 1491480721772,
-    "meta": 1491480729097,
-    "relativePath": "js\\game.js"
-  },
   "1258dc28-c072-47a7-8771-9d560d4c115d": {
     "asset": 1491480573530,
     "meta": 1491480729368,
     "relativePath": "js\\rule.js"
-  },
-  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
-    "asset": 1491480696787,
-    "meta": 1491480729369,
-    "relativePath": "js\\shop.js"
   },
   "18034ae2-5529-4fe6-9599-81ac68bd7447": {
     "asset": 1491480785366,
@@ -693,5 +653,55 @@
     "asset": 1491481097939,
     "meta": 1491481099961,
     "relativePath": "js\\record.js"
+  },
+  "aaa417d2-9d27-4320-8451-30bff5bf30e1": {
+    "asset": 1491553181290,
+    "meta": 1491553199289,
+    "relativePath": "js\\claw.js"
+  },
+  "cf421704-5d40-4ac4-a656-72eff088246e": {
+    "asset": 1491805639796,
+    "meta": 1491805639824,
+    "relativePath": "scene\\splash.fire"
+  },
+  "146809c2-1160-40df-ad7a-72d51a8d4cb1": {
+    "asset": 1491805620081,
+    "meta": 1491805625478,
+    "relativePath": "js\\splash.js"
+  },
+  "235d93f4-9ec0-45d8-acb1-f9df85a0cdae": {
+    "asset": 1491806192539,
+    "meta": 1491806468097,
+    "relativePath": "js\\main.js"
+  },
+  "30ebb2d6-fbf1-4f9d-a39e-1f78fec12d02": {
+    "asset": 1491811318288,
+    "meta": 1491811414915,
+    "relativePath": "resources\\image\\game\\badge.png"
+  },
+  "c3b2d678-ac6d-4d80-a469-3d1cb55a7f68": {
+    "asset": 1491811305515,
+    "meta": 1491811414920,
+    "relativePath": "resources\\image\\game\\btn-start-normal.png"
+  },
+  "ada3432e-2a1a-48c2-9a10-92bfcf9f561e": {
+    "asset": 1491811310091,
+    "meta": 1491811414928,
+    "relativePath": "resources\\image\\game\\btn-start-press.png"
+  },
+  "809ed419-7bf4-4fef-b410-f3016f5363c2": {
+    "asset": 1491813541400,
+    "meta": 1491813590325,
+    "relativePath": "js\\shop.js"
+  },
+  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
+    "asset": 1491887090818,
+    "meta": 1491887132265,
+    "relativePath": "js\\api.js"
+  },
+  "be740382-f997-4b25-b78c-b18596ff2e74": {
+    "asset": 1491887127531,
+    "meta": 1491887132267,
+    "relativePath": "js\\game.js"
   }
 }

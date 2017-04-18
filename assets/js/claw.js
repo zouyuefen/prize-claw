@@ -81,6 +81,9 @@ export default cc.Class({
 
         // 抓取结果
         this.results = null
+
+        // 等待接口而中止释放操作
+        this.pause = false
     },
 
     grab(func) {
@@ -112,6 +115,53 @@ export default cc.Class({
                 this.grab(this.rise.bind(this))
             })
         ))
+        window._main.api.monitor('开始按钮', 6)
+    },
+
+    over() {
+        // 重置 pause
+        this.pause = false
+        if (this.catched) {
+            if (!this.results) {
+                this.gift.zIndex = 0
+                this.lose()
+            } else {
+                // 重置 gift zIndex < pit-around
+                if (this.results.grabResultInt === 2) {
+                    this.gift.zIndex = 0
+                    this.lose()
+                    this.main.game.showResult(this.results)
+                } else if (this.results.grabResultInt === 3) {
+                    this.win()
+
+                    if (this.results.goods.type === 0) {
+                        this.main.game.showResult(this.results)
+                    } else {
+                        // 抓到实物的效果
+                        this.main.game.prompt.show(this.results.goods.img)
+                    }
+                }
+            }
+
+        } else {
+            this.free()
+            /*
+            * 请求抓取处理接口
+            */
+            this.wait = true
+            this.main.api.grab(null, this.main.game.matchId)
+            .then(res => {
+                this.wait = false
+                if (res.data.ok) this.results = res.data.r
+                else this.results = null
+                this.main.user.update()
+            }).catch(err => {
+                this.wait = false
+                this.results = null
+                this.main.user.update()
+            })
+        }
+
     },
 
     rise() {
@@ -120,47 +170,9 @@ export default cc.Class({
         this.node.runAction(cc.sequence(
             this.actions.up,
             cc.callFunc(() => {
-                if (this.catched) {
-                    if (!this.results) {
-                        this.gift.zIndex = 0
-                        this.lose()
-                    } else {
-                        // 重置 gift zIndex < pit-around
-                        if (this.results.grabResultInt === 2) {
-                            this.gift.zIndex = 0
-                            this.lose()
-                            this.main.game.showResult(this.results)
-                        } else if (this.results.grabResultInt === 3) {
-                            this.win()
-
-                            if (this.results.goods.type === 0) {
-                                this.main.game.showResult(this.results)
-                            } else {
-                                // 抓到实物的效果
-                                this.main.game.prompt.show(this.results.goods.img)
-                            }
-                        }
-
-                    }
-
-                } else {
-                    this.free()
-                    /*
-                    * 请求抓取处理接口
-                    */
-                    this.wait = true
-                    this.main.api.grab(null, this.main.game.matchId)
-                    .then(res => {
-                        this.wait = false
-                        if (res.data.ok) this.results = res.data.r
-                        else this.results = null
-                        this.main.user.update()
-                    }).catch(err => {
-                        this.wait = false
-                        this.results = null
-                        this.main.user.update()
-                    })
-                }
+                if (this.wait) {
+                    this.pause = true
+                } else this.over()
             })
         ))
     },
@@ -209,10 +221,14 @@ export default cc.Class({
             if (res.data.ok) this.results = res.data.r
             else this.results = null
             this.main.user.update()
+
+            if (this.pause) this.over()
+
         }).catch(err => {
             this.wait = false
             this.results = null
             this.main.user.update()
+            if (this.pause) this.over()
         })
     },
 
