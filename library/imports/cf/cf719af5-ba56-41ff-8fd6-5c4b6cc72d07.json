@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "coupon",
+    "texture": "7993587a-45fa-476c-9905-e31454908826",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      90,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      90,
+      56
+    ]
+  }
+}

@@ -3,6 +3,7 @@ export default {
     balance: 0,
     avatar: null,
     nickname: null,
+    starsNum: 0,
 
     update() {
 
@@ -13,6 +14,14 @@ export default {
                 this.balance = res.data.r.balance
                 this.phone = res.data.r.phone
                 this.avatar = res.data.r.profileImg
+                this.starsNum = res.data.r.starsNum
+
+                if (this.starsNum && !localStorage.getStar) {
+                    window._main.node.getChildByName('guide').active = true
+                    localStorage.getStar = true
+                }
+
+                window._main.game.updateStars()
 
                 window._main.game.score.getComponent(cc.Label)
                     .string = this.balance

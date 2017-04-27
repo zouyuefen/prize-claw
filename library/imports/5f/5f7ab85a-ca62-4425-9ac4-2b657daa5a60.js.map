@@ -3,10 +3,22 @@
   "sources": [
     "unknown"
   ],
-  "names": [],
-  "mappings": ";;;qBAAe,EAAE,CAAC,KAAK,CAAC;AACpB,eAAS,EAAE,CAAC,SAAS;AACrB,cAAU,EAAE;AACR,kBAAU,EAAE;AACR,uBAAS,IAAI;AACb,gBAAI,EAAE,EAAE,CAAC,WAAW;SACvB;AACD,eAAO,EAAE;AACL,uBAAS,IAAI;AACb,gBAAI,EAAE,EAAE,CAAC,WAAW;SACvB;KACJ;CACJ,CAAC",
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "clickStart",
+    "default",
+    "type",
+    "AudioSource",
+    "catched",
+    "bgm"
+  ],
+  "mappings": ";;;;;kBAAeA,GAAGC,KAAH,CAAS;AACpBC,aAASF,GAAGG,SADQ;AAEpBC,gBAAY;AACRC,oBAAY;AACRC,qBAAS,IADD;AAERC,kBAAMP,GAAGQ;AAFD,SADJ;AAKRC,iBAAS;AACLH,qBAAS,IADJ;AAELC,kBAAMP,GAAGQ;AAFJ,SALD;AASRE,aAAK;AACDJ,qBAAS,IADR;AAEDC,kBAAMP,GAAGQ;AAFR;AATG;AAFQ,CAAT,C",
   "file": "unknown",
   "sourcesContent": [
-    "export default cc.Class({\r\n    extends: cc.Component,\r\n    properties: {\r\n        clickStart: {\r\n            default: null,\r\n            type: cc.AudioSource\r\n        },\r\n        catched: {\r\n            default: null,\r\n            type: cc.AudioSource\r\n        }\r\n    }\r\n})\r\n"
+    "export default cc.Class({\r\n    extends: cc.Component,\r\n    properties: {\r\n        clickStart: {\r\n            default: null,\r\n            type: cc.AudioSource\r\n        },\r\n        catched: {\r\n            default: null,\r\n            type: cc.AudioSource\r\n        },\r\n        bgm: {\r\n            default: null,\r\n            type: cc.AudioSource\r\n        }\r\n    }\r\n})\r\n"
   ]
 }

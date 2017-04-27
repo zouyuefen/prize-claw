@@ -5,9 +5,9 @@
     "texture": "ef3e6e93-f1a6-4dac-83a0-026bd176a965",
     "atlas": "",
     "rect": [
+      1,
       0,
-      0,
-      104,
+      102,
       104
     ],
     "offset": [

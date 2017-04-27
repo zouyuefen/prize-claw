@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "rule-bkg",
+    "name": "panel",
     "texture": "55a3c01d-410a-4cc5-bc98-d99d75e7d738",
     "atlas": "",
     "rect": [
@@ -17,6 +17,12 @@
     "originalSize": [
       568,
       722
+    ],
+    "capInsets": [
+      0,
+      327,
+      0,
+      124
     ]
   }
 }

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "starGray",
+    "texture": "ef574ba1-d0aa-4a0f-a527-cd87f2543a65",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      58,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      54
+    ]
+  }
+}

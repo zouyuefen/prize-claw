@@ -2,7 +2,7 @@
 cc._RFpush(module, 'd1fdcYeYzFIcpkTKkk9ibh4', 'user');
 // js\user.js
 
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -12,6 +12,7 @@ exports.default = {
     balance: 0,
     avatar: null,
     nickname: null,
+    starsNum: 0,
 
     update: function update() {
         var _this = this;
@@ -22,6 +23,14 @@ exports.default = {
                 _this.balance = res.data.r.balance;
                 _this.phone = res.data.r.phone;
                 _this.avatar = res.data.r.profileImg;
+                _this.starsNum = res.data.r.starsNum;
+
+                if (_this.starsNum && !localStorage.getStar) {
+                    window._main.node.getChildByName('guide').active = true;
+                    localStorage.getStar = true;
+                }
+
+                window._main.game.updateStars();
 
                 window._main.game.score.getComponent(cc.Label).string = _this.balance;
             }

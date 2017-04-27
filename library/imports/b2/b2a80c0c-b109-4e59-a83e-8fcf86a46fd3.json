@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "iphone",
+    "texture": "425054da-665b-4773-b839-c482f0504930",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      120,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      120,
+      88
+    ]
+  }
+}

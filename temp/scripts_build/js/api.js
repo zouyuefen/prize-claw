@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 */
 
 var APPID = 'wxa95eee48a3ac58c6',
-    SERVER = '//doll.yoosh.tv';
+    SERVER = location.host.includes('lab') ? '//lab.yoosh.tv' : location.host.includes('localhost') ? '//lab.yoosh.tv' : '//doll.yoosh.tv';
 
 var Base = {
     getCookie: function getCookie(key) {
@@ -147,10 +147,10 @@ function Api() {
     };
 
     this.onEvent = function () {
-        if (TDAPP) {
-            var _TDAPP;
+        if (window.TDAPP) {
+            var _window$TDAPP;
 
-            (_TDAPP = TDAPP).onEvent.apply(_TDAPP, arguments);
+            (_window$TDAPP = window.TDAPP).onEvent.apply(_window$TDAPP, arguments);
         }
     };
 }

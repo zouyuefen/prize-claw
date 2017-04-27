@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chance",
+    "texture": "43774387-0096-44fb-bc0d-8b4d5321ac5a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      88
+    ]
+  }
+}

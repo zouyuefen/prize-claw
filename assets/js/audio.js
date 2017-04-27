@@ -8,6 +8,10 @@ export default cc.Class({
         catched: {
             default: null,
             type: cc.AudioSource
+        },
+        bgm: {
+            default: null,
+            type: cc.AudioSource
         }
     }
 })

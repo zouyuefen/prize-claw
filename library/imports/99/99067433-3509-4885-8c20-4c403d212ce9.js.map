@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "mask",
+    "default",
+    "type",
+    "Node",
+    "onLoad",
+    "listen",
+    "on",
+    "EventType",
+    "TOUCH_START",
+    "hide",
+    "show",
+    "node",
+    "active",
+    "opacity",
+    "runAction",
+    "fadeIn",
+    "sequence",
+    "fadeOut",
+    "callFunc"
+  ],
+  "mappings": ";;;;;kBAAeA,GAAGC,KAAH,CAAS;AACpBC,aAASF,GAAGG,SADQ;AAEpBC,gBAAY;AACRC,cAAM;AACFC,qBAAS,IADP;AAEFC,kBAAMP,GAAGQ;AAFP;AADE,KAFQ;;AASpBC,UAToB,oBASX;AACL,aAAKC,MAAL;AACH,KAXmB;AAapBA,UAboB,oBAaX;AACL,aAAKL,IAAL,CAAUM,EAAV,CACIX,GAAGQ,IAAH,CAAQI,SAAR,CAAkBC,WADtB,EAEI,YAAW;AACP,iBAAKC,IAAL;AACH,SAJL,EAIO,IAJP;AAMH,KApBmB;AAsBpBC,QAtBoB,kBAsBb;AACH,YAAI,KAAKC,IAAL,CAAUC,MAAd,EAAsB,KAAKD,IAAL,CAAUE,OAAV,GAAoB,CAApB,CAAtB,KACK;AACD,iBAAKF,IAAL,CAAUC,MAAV,GAAmB,IAAnB;AACA,iBAAKD,IAAL,CAAUE,OAAV,GAAoB,CAApB;AACH;AACD,aAAKF,IAAL,CAAUG,SAAV,CAAoBnB,GAAGoB,MAAH,CAAU,EAAV,CAApB;AACH,KA7BmB;AA+BpBN,QA/BoB,kBA+Bb;AAAA;;AACH,aAAKE,IAAL,CAAUG,SAAV,CAAoBnB,GAAGqB,QAAH,CAChBrB,GAAGsB,OAAH,CAAW,EAAX,CADgB,EAEhBtB,GAAGuB,QAAH,CAAY,YAAM;AACd,kBAAKP,IAAL,CAAUC,MAAV,GAAmB,KAAnB;AACH,SAFD,CAFgB,CAApB;AAMH;AAtCmB,CAAT,C",
+  "file": "unknown",
+  "sourcesContent": [
+    "export default cc.Class({\r\n    extends: cc.Component,\r\n    properties: {\r\n        mask: {\r\n            default: null,\r\n            type: cc.Node\r\n        }\r\n    },\r\n\r\n    onLoad() {\r\n        this.listen()\r\n    },\r\n\r\n    listen() {\r\n        this.mask.on(\r\n            cc.Node.EventType.TOUCH_START,\r\n            function() {\r\n                this.hide()\r\n            }, this\r\n        )\r\n    },\r\n\r\n    show() {\r\n        if (this.node.active) this.node.opacity = 0\r\n        else {\r\n            this.node.active = true\r\n            this.node.opacity = 0\r\n        }\r\n        this.node.runAction(cc.fadeIn(.5))\r\n    },\r\n\r\n    hide() {\r\n        this.node.runAction(cc.sequence(\r\n            cc.fadeOut(.5),\r\n            cc.callFunc(() => {\r\n                this.node.active = false\r\n            })\r\n        ))\r\n    }\r\n})"
+  ]
+}

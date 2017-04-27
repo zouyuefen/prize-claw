@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "activityBox",
+    "texture": "2786cd12-99fd-457f-bcc0-3c3961383793",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      440,
+      244
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      440,
+      244
+    ]
+  }
+}

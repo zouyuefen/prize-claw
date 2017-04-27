@@ -1,3 +1,5 @@
+import PrizeDetail from 'prizeDetail'
+
 export default cc.Class({
     extends: cc.Component,
 
@@ -25,11 +27,16 @@ export default cc.Class({
         loginBtn: {
             default: null,
             type: cc.Node
+        },
+        prizeDetail: {
+            default: null,
+            type: PrizeDetail
         }
     },
 
 
     onLoad() {
+        this.prizeDetail.init()
         this.listen()
     },
 
@@ -79,6 +86,9 @@ export default cc.Class({
     },
 
     show() {
+
+        const _this = this
+
         window._main.api.monitor('抓去记录', 13)
 
         if (this.node.active) this.node.opacity = 0
@@ -108,7 +118,8 @@ export default cc.Class({
                     list = res.data.r
 
                 children.forEach(child => {
-                    child.active = false
+                    child.active =
+                    child._bind = false
                 })
                 const load = () => {
                     const
@@ -121,9 +132,45 @@ export default cc.Class({
 
                     child.active = true
                     child.opacity = 255
+                    
+                    // 获奖状态
+                    const 
+                        btn = child.getChildByName('btn'),
+                        state = child.getChildByName('state')
+                    btn.active = 
+                    state.active = false
+                    if (item.awardStatus === 0) {
+                        btn.active = true
+                    } else {
+                        state.active = true
+                        state.getComponent(cc.Label)
+                            .string = item.awardStatusStr
+                    }
 
-                    child.getChildByName('state').getComponent(cc.Label)
-                        .string = item.awardStatusStr
+                    if (!child._bind) {
+                        child._bind = true
+
+                        btn.on(
+                            cc.Node.EventType.TOUCH_START,
+                            function() {
+                                this.scale = .95
+                            }
+                        )
+
+                        btn.on(
+                            cc.Node.EventType.TOUCH_END,
+                            function() {
+                                this.scale = 1
+                                _this.prizeDetail.show({
+                                    uri: item.goodsImg,
+                                    name: item.goodsName,
+                                    state: item.awardStatusStr,
+                                    text: item.receiveInfo
+                                })
+                            }
+                        )
+                    }
+                    
 
                     child.getChildByName('layout').getChildByName('name')
                         .getComponent(cc.Label).string = item.goodsName

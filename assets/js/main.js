@@ -101,12 +101,14 @@ cc.Class({
                             user.balance = res.data.r.balance
                             user.phone = res.data.r.phone
                             user.avatar = res.data.r.profileImg
+                            user.starsNum = res.data.r.starsNum
                             this.user = user
 
                             this.game.score.getComponent(cc.Label)
                                 .string = user.balance
 
                             this.game.node.active = true
+                            this.game.updateStars()
                         }
                     })
                 } else api.authorize()
@@ -115,12 +117,16 @@ cc.Class({
                 user.balance = res.data.r.balance
                 user.phone = res.data.r.phone
                 user.avatar = res.data.r.profileImg
+                user.starsNum = res.data.r.starsNum
+
                 this.user = user
 
                 this.game.score.getComponent(cc.Label)
                     .string = user.balance
 
                 this.game.node.active = true
+                this.game.updateStars()
+                
             }
         })
     }

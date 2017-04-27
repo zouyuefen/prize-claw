@@ -114,8 +114,11 @@ export default cc.Class({
 
                     child._goodsId = item.id
 
+                    // child.getChildByName('layout').getChildByName('more')
+                    //     .getComponent(cc.Label).string = `${item.promotionQuantity}金币`
+
                     child.getChildByName('layout').getChildByName('more')
-                        .getComponent(cc.Label).string = `${item.promotionQuantity}金币`
+                        .getComponent(cc.Label).string = `${item.name}`
 
                     child.getChildByName('layout').getChildByName('less')
                         .getComponent(cc.Label).string = `${item.quantity}金币`

@@ -4,7 +4,8 @@
 
 const
     APPID = 'wxa95eee48a3ac58c6',
-    SERVER = '//doll.yoosh.tv'
+    SERVER = location.host.includes('lab') ? '//lab.yoosh.tv' :
+        location.host.includes('localhost') ? '//lab.yoosh.tv' : '//doll.yoosh.tv'
 
 const Base = {
     getCookie(key) {
@@ -137,8 +138,8 @@ function Api() {
     }
 
     this.onEvent = function(...args) {
-        if (TDAPP) {
-            TDAPP.onEvent(...args)
+        if (window.TDAPP) {
+            window.TDAPP.onEvent(...args)
         }
     }
 

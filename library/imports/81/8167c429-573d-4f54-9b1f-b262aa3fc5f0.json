@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "btn-start-press",
-    "texture": "ada3432e-2a1a-48c2-9a10-92bfcf9f561e",
+    "name": "hook",
+    "texture": "d9e4893b-45ef-43e6-b300-a97f2253d0c4",
     "atlas": "",
     "rect": [
       0,
       0,
-      402,
-      134
+      56,
+      56
     ],
     "offset": [
-      -1,
+      0,
       0
     ],
     "originalSize": [
-      404,
-      134
+      56,
+      56
     ]
   }
 }

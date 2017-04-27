@@ -133,13 +133,17 @@ export default cc.Class({
                     this.main.game.showResult(this.results)
                 } else if (this.results.grabResultInt === 3) {
                     this.win()
-
                     if (this.results.goods.type === 0) {
                         this.main.game.showResult(this.results)
                     } else {
                         // 抓到实物的效果
                         this.main.game.prompt.show(this.results.goods.img)
                     }
+                }
+
+                // 5星奖励
+                if (this.results.starsGoods) {
+                    this.main.game.starPrompt.show(this.results.starsGoods.img)
                 }
             }
 
@@ -152,9 +156,15 @@ export default cc.Class({
             this.main.api.grab(null, this.main.game.matchId)
             .then(res => {
                 this.wait = false
+                if (res.data.r.starsGoods) {
+                    this.main.game.starPrompt.show(res.data.r.starsGoods.img)
+                }
                 if (res.data.ok) this.results = res.data.r
                 else this.results = null
                 this.main.user.update()
+                // 5星奖励
+                
+                
             }).catch(err => {
                 this.wait = false
                 this.results = null
@@ -221,9 +231,7 @@ export default cc.Class({
             if (res.data.ok) this.results = res.data.r
             else this.results = null
             this.main.user.update()
-
             if (this.pause) this.over()
-
         }).catch(err => {
             this.wait = false
             this.results = null

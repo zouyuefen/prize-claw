@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "starYellow",
+    "texture": "ece55d7f-35e5-4ed2-8442-1bfc7e300c5f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      58,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      54
+    ]
+  }
+}

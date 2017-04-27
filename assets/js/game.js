@@ -1,6 +1,7 @@
 import Claw from 'claw'
 import Rule from 'rule'
 import Prompt from 'prompt'
+import starPrompt from 'starPrompt'
 
 export default cc.Class({
     extends: cc.Component,
@@ -60,6 +61,34 @@ export default cc.Class({
         score: {
             default: null,
             type: cc.Node
+        },
+        scoreBkg: {
+            default: null,
+            type: cc.Node
+        },
+        voice: {
+            default: null,
+            type: cc.Node
+        },
+        activityBox: {
+            default: null,
+            type: cc.Node
+        },
+        starBox: {
+            default: null,
+            type: cc.Node
+        },
+        qMark: {
+            default: null,
+            type: cc.Node
+        },
+        starResultTip: {
+            default: null,
+            type: cc.Node
+        },
+        starPrompt: {
+            default: null,
+            type: starPrompt
         }
     },
     onLoad() {
@@ -69,6 +98,13 @@ export default cc.Class({
         window._main.api.onEvent('进入游戏')
     },
     init() {
+
+        window._main.audio.bgm.play()
+        //
+        this.bgm = window._main.audio.bgm.isPlaying
+
+        this.voice.getComponent(cc.Sprite).spriteFrame = this.bgm ? 
+            window._main.spriteFrames.voiceOn : window._main.spriteFrames.voiceClose
 
         // 坑下围 zIndex < gift.zIndex
         this.pitAround.zIndex = 1
@@ -91,14 +127,19 @@ export default cc.Class({
         this.stakeLayout.zIndex =
         this.startBtn.zIndex = 3
 
-        // 设置下注按钮 zIndex
         this.stake.zIndex = 3
+
+        // 设置音效按钮 zIndex
+        this.voice.zIndex = 3
 
         // 下注值
         this.stakeValue = null
 
         // 获取场次
-        this.getModelList()
+        // this.getModelList()
+        this.matchId = 4
+
+        this.getPrizeList()
 
     },
 
@@ -186,8 +227,10 @@ export default cc.Class({
                 .spriteFrame = cc.loader.getRes('image/game/result-fail', cc.SpriteFrame)
         }
 
+        this.starResultTip.active = results.getStars
+
         this.result.active = true
-        this.result.getChildByName('text')
+        this.result.getChildByName('list').getChildByName('text')
             .getComponent(cc.Label).string = results.grabResultStr
         this.result.runAction(cc.sequence(
             cc.jumpBy(.5, 0, 0, 10, 3),
@@ -197,11 +240,61 @@ export default cc.Class({
                 }, 1000)
             })
         ))
+    },
 
+    update() {
+        if (this.bgm && !window._main.audio.bgm.isPlaying) 
+            window._main.audio.bgm.play()
+    },
 
+    activityBoxShow() {
+        this.activityBox.active = true
+        setTimeout(() => {
+            this.activityBox.active = false
+        }, 3000)
+    },
+
+    updateStars() {
+        this.starBox.children.forEach((star, i) => {
+            if (i < window._main.user.starsNum) {
+                star.getComponent(cc.Sprite).spriteFrame = 
+                    window._main.spriteFrames.starYellow
+            } else {
+                star.getComponent(cc.Sprite).spriteFrame = 
+                    window._main.spriteFrames.starGray
+            }
+        })
     },
 
     listen() {
+        const _this = this
+        // 点击 问号 和 星星
+        this.qMark.on(
+            cc.Node.EventType.TOUCH_START,
+            this.activityBoxShow, this
+        )
+
+        this.starBox.on(
+            cc.Node.EventType.TOUCH_START,
+            this.activityBoxShow, this
+        )
+        // 音效按钮
+        this.voice.on(
+            cc.Node.EventType.TOUCH_START,
+            function() {
+            }
+        )
+        this.voice.on(
+            cc.Node.EventType.TOUCH_END,
+            function() {
+                _this.bgm ^= 1
+                this.getComponent(cc.Sprite).spriteFrame = _this.bgm ? 
+                    window._main.spriteFrames.voiceOn : window._main.spriteFrames.voiceClose
+                
+                _this.bgm ? window._main.audio.bgm.resume() : window._main.audio.bgm.pause()
+                
+            }
+        )
         // 开始按钮
         this.startBtn.on(
             cc.Node.EventType.TOUCH_START,
@@ -216,8 +309,8 @@ export default cc.Class({
             () => {
                 this.startBtn.getComponent(cc.Sprite).spriteFrame =
                     window._main.spriteFrames.startBtnNormal
-                if (this.matchId === null) alert('请先下注')
-                else if (window._main.user.balance < this.stakeValue) {
+                // if (this.matchId === null) alert('请先下注')
+                if (window._main.user.balance <= 0) {
                     window._main.shop.show()
                 }
                 else this.claw.fall()
@@ -332,17 +425,9 @@ export default cc.Class({
             }
         )
 
-        // addBtn
-        this.addBtn.on(
-            cc.Node.EventType.TOUCH_START,
-            () => {
-                this.addBtn.scale = .95
-            }
-        )
-        this.addBtn.on(
+        this.scoreBkg.on(
             cc.Node.EventType.TOUCH_END,
             () => {
-                this.addBtn.scale = 1
                 window._main.shop.show()
             }
         )

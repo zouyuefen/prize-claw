@@ -80,7 +80,8 @@ exports.default = cc.Class({
 
             // 判断奖品类型
             if (item.type === 0) {
-                gift.getChildByName('text').getComponent(cc.Label).string = item.name.match(/\d+/)[0];
+                // gift.getChildByName('text')
+                //     .getComponent(cc.Label).string = item.name.match(/\d+/)[0]
             } else {
                 gift.getChildByName('text').getComponent(cc.Label).string = '';
             }

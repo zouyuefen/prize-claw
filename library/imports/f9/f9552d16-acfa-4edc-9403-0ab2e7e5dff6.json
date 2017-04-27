@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "callCharge",
+    "texture": "afc38fa7-7b7a-494f-8ae8-55cc70dff80d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      90,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      90,
+      56
+    ]
+  }
+}

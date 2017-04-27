@@ -119,11 +119,13 @@ cc.Class({
                             _user2.default.balance = res.data.r.balance;
                             _user2.default.phone = res.data.r.phone;
                             _user2.default.avatar = res.data.r.profileImg;
+                            _user2.default.starsNum = res.data.r.starsNum;
                             _this.user = _user2.default;
 
                             _this.game.score.getComponent(cc.Label).string = _user2.default.balance;
 
                             _this.game.node.active = true;
+                            _this.game.updateStars();
                         }
                     });
                 } else _api2.default.authorize();
@@ -132,11 +134,14 @@ cc.Class({
                 _user2.default.balance = res.data.r.balance;
                 _user2.default.phone = res.data.r.phone;
                 _user2.default.avatar = res.data.r.profileImg;
+                _user2.default.starsNum = res.data.r.starsNum;
+
                 _this.user = _user2.default;
 
                 _this.game.score.getComponent(cc.Label).string = _user2.default.balance;
 
                 _this.game.node.active = true;
+                _this.game.updateStars();
             }
         });
     }

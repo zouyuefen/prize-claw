@@ -7,6 +7,13 @@ cc._RFpush(module, '6b7ccFP5wRN/qmzVt8r34qS', 'record');
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _prizeDetail = require('prizeDetail');
+
+var _prizeDetail2 = _interopRequireDefault(_prizeDetail);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = cc.Class({
     extends: cc.Component,
 
@@ -34,14 +41,19 @@ exports.default = cc.Class({
         loginBtn: {
             default: null,
             type: cc.Node
+        },
+        prizeDetail: {
+            default: null,
+            type: _prizeDetail2.default
         }
     },
 
     onLoad: function onLoad() {
+        this.prizeDetail.init();
         this.listen();
     },
     listen: function listen() {
-        var _this = this;
+        var _this2 = this;
 
         this.mask.on(cc.Node.EventType.TOUCH_START, function (event) {
             event.stopPropagation();
@@ -51,27 +63,29 @@ exports.default = cc.Class({
         * 关闭按钮
         */
         this.close.on(cc.Node.EventType.TOUCH_START, function () {
-            _this.close.scale = .95;
+            _this2.close.scale = .95;
         });
 
         this.close.on(cc.Node.EventType.TOUCH_END, function () {
-            _this.close.scale = 1;
-            _this.hide();
+            _this2.close.scale = 1;
+            _this2.hide();
         });
 
         //loginBtn
         this.loginBtn.on(cc.Node.EventType.TOUCH_START, function () {
-            _this.loginBtn.scale = .95;
+            _this2.loginBtn.scale = .95;
         });
 
         this.loginBtn.on(cc.Node.EventType.TOUCH_END, function () {
-            _this.loginBtn.scale = 1;
-            _this.hide();
+            _this2.loginBtn.scale = 1;
+            _this2.hide();
             window._main.login.show();
         });
     },
     show: function show() {
-        var _this2 = this;
+        var _this3 = this;
+
+        var _this = this;
 
         window._main.api.monitor('抓去记录', 13);
 
@@ -95,24 +109,51 @@ exports.default = cc.Class({
                     return;
                 }
                 var i = 0;
-                var children = _this2.layout.children,
+                var children = _this3.layout.children,
                     list = res.data.r;
 
                 children.forEach(function (child) {
-                    child.active = false;
+                    child.active = child._bind = false;
                 });
                 var load = function load() {
                     var item = list[i];
                     var child = children[i];
                     if (!child) {
-                        child = cc.instantiate(_this2.item);
-                        _this2.layout.addChild(child);
+                        child = cc.instantiate(_this3.item);
+                        _this3.layout.addChild(child);
                     }
 
                     child.active = true;
                     child.opacity = 255;
 
-                    child.getChildByName('state').getComponent(cc.Label).string = item.awardStatusStr;
+                    // 获奖状态
+                    var btn = child.getChildByName('btn'),
+                        state = child.getChildByName('state');
+                    btn.active = state.active = false;
+                    if (item.awardStatus === 0) {
+                        btn.active = true;
+                    } else {
+                        state.active = true;
+                        state.getComponent(cc.Label).string = item.awardStatusStr;
+                    }
+
+                    if (!child._bind) {
+                        child._bind = true;
+
+                        btn.on(cc.Node.EventType.TOUCH_START, function () {
+                            this.scale = .95;
+                        });
+
+                        btn.on(cc.Node.EventType.TOUCH_END, function () {
+                            this.scale = 1;
+                            _this.prizeDetail.show({
+                                uri: item.goodsImg,
+                                name: item.goodsName,
+                                state: item.awardStatusStr,
+                                text: item.receiveInfo
+                            });
+                        });
+                    }
 
                     child.getChildByName('layout').getChildByName('name').getComponent(cc.Label).string = item.goodsName;
 
@@ -132,10 +173,10 @@ exports.default = cc.Class({
         });
     },
     hide: function hide() {
-        var _this3 = this;
+        var _this4 = this;
 
         this.node.runAction(cc.sequence(cc.fadeOut(.5), cc.callFunc(function () {
-            _this3.node.active = false;
+            _this4.node.active = false;
         })));
     }
 });

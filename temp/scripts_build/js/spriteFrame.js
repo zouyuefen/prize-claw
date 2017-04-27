@@ -82,6 +82,22 @@ exports.default = cc.Class({
         matchL: {
             default: null,
             type: cc.SpriteFrame
+        },
+        voiceOn: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+        voiceClose: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+        starGray: {
+            default: null,
+            type: cc.SpriteFrame
+        },
+        starYellow: {
+            default: null,
+            type: cc.SpriteFrame
         }
     }
 });
