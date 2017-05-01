@@ -225,8 +225,8 @@
     "relativePath": "resources\\image"
   },
   "999bdc83-9443-4f81-9140-25828deae846": {
-    "asset": 1492849344471,
-    "meta": 1493192581900,
+    "asset": 1493282469827,
+    "meta": 1493359616363,
     "relativePath": "js"
   },
   "66021f30-ed75-416a-b3c8-9c10c2869eee": {
@@ -235,8 +235,8 @@
     "relativePath": "resources\\image\\game\\score-bkg.png"
   },
   "4cfae95f-3c26-4092-8fa4-150777a48293": {
-    "asset": 1493284118706,
-    "meta": 1493284118757,
+    "asset": 1493377732424,
+    "meta": 1493377732490,
     "relativePath": "scene\\main.fire"
   },
   "9579b308-06ce-4df0-898d-2b206f90dcb1": {
@@ -350,19 +350,14 @@
     "relativePath": "resources\\audio\\catched.mp3"
   },
   "8e8639e6-c666-4170-a268-5fdb5438f3b3": {
-    "asset": 1492687398193,
-    "meta": 1492757586842,
+    "asset": 1493281850807,
+    "meta": 1493359616363,
     "relativePath": "resources\\image\\public"
   },
   "958cc6f3-c936-4c32-8bcb-8e485f6ca75e": {
     "asset": 1490455893997,
     "meta": 1490593206340,
     "relativePath": "resources\\image\\public\\bkg.png"
-  },
-  "87c850c2-3657-44a8-acaf-f72bd297e466": {
-    "asset": 1490457098149,
-    "meta": 1490457120675,
-    "relativePath": "resources\\image\\rule\\rule-title.png"
   },
   "5bd7d804-2bfe-4eff-8d98-80d6a42b1206": {
     "asset": 1490457180246,
@@ -460,13 +455,13 @@
     "relativePath": "resources\\image\\record"
   },
   "fc29bc6b-ff40-4d1d-9856-960df1d82a99": {
-    "asset": 1492677927949,
-    "meta": 1492680007885,
+    "asset": 1493359794489,
+    "meta": 1493367109441,
     "relativePath": "resources\\image\\game"
   },
   "057df302-d8a4-4ddd-b983-c25fab180adc": {
-    "asset": 1492681637093,
-    "meta": 1492757586844,
+    "asset": 1493288170453,
+    "meta": 1493359616363,
     "relativePath": "resources\\image\\rule"
   },
   "49daf84b-dff9-4d28-aa0b-b1e6984bc64b": {
@@ -784,25 +779,10 @@
     "meta": 1493275434444,
     "relativePath": "js\\spriteFrame.js"
   },
-  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
-    "asset": 1493275854772,
-    "meta": 1493275858702,
-    "relativePath": "js\\api.js"
-  },
   "235d93f4-9ec0-45d8-acb1-f9df85a0cdae": {
     "asset": 1493276906180,
     "meta": 1493276920234,
     "relativePath": "js\\main.js"
-  },
-  "b9d0acbe-8071-443b-8b27-85c093a0e95c": {
-    "asset": 1491480811929,
-    "meta": 1493281120169,
-    "relativePath": "js\\starPrompt.js"
-  },
-  "be740382-f997-4b25-b78c-b18596ff2e74": {
-    "asset": 1493281071902,
-    "meta": 1493281120512,
-    "relativePath": "js\\game.js"
   },
   "2d57c6e2-8b51-4f41-bd99-04d56051709a": {
     "asset": 1493281845911,
@@ -814,14 +794,39 @@
     "meta": 1493282469978,
     "relativePath": "js\\guide.js"
   },
-  "d1fdc61e-6331-4872-9913-2a493d89b878": {
-    "asset": 1493282580049,
-    "meta": 1493282585464,
-    "relativePath": "js\\user.js"
+  "b9d0acbe-8071-443b-8b27-85c093a0e95c": {
+    "asset": 1493287492018,
+    "meta": 1493287572535,
+    "relativePath": "js\\starPrompt.js"
   },
   "aaa417d2-9d27-4320-8451-30bff5bf30e1": {
-    "asset": 1493282747612,
-    "meta": 1493282749813,
+    "asset": 1493288020989,
+    "meta": 1493288023450,
     "relativePath": "js\\claw.js"
+  },
+  "d1fdc61e-6331-4872-9913-2a493d89b878": {
+    "asset": 1493287892482,
+    "meta": 1493288023487,
+    "relativePath": "js\\user.js"
+  },
+  "f42db488-650f-42db-85d9-833622e00345": {
+    "asset": 1493191894000,
+    "meta": 1493288145031,
+    "relativePath": "resources\\image\\rule\\title.png"
+  },
+  "95675717-c6da-454f-9cc8-d0f955790cac": {
+    "asset": 1493359778704,
+    "meta": 1493359794507,
+    "relativePath": "resources\\image\\game\\rollBkg.png"
+  },
+  "b2c17cd8-3ba1-4e91-9a23-b58b711ecf01": {
+    "asset": 1493360293622,
+    "meta": 1493360303740,
+    "relativePath": "js\\api.js"
+  },
+  "be740382-f997-4b25-b78c-b18596ff2e74": {
+    "asset": 1493387068000,
+    "meta": 1493387071921,
+    "relativePath": "js\\game.js"
   }
 }

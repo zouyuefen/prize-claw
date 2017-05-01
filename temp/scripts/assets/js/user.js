@@ -2,7 +2,7 @@
 cc._RFpush(module, 'd1fdcYeYzFIcpkTKkk9ibh4', 'user');
 // js\user.js
 
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -24,11 +24,6 @@ exports.default = {
                 _this.phone = res.data.r.phone;
                 _this.avatar = res.data.r.profileImg;
                 _this.starsNum = res.data.r.starsNum;
-
-                if (_this.starsNum && !localStorage.getStar) {
-                    window._main.node.getChildByName('guide').active = true;
-                    localStorage.getStar = true;
-                }
 
                 window._main.game.updateStars();
 

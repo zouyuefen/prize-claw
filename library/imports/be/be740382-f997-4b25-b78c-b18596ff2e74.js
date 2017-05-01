@@ -108,13 +108,90 @@ exports.default = cc.Class({
         starPrompt: {
             default: null,
             type: _starPrompt2.default
+        },
+        broadcast: {
+            default: null,
+            type: cc.Node
         }
     },
     onLoad: function onLoad() {
+        var _this2 = this;
+
         this.init();
         this.listen();
         window._main.api.monitor('进入游戏', 1);
         window._main.api.onEvent('进入游戏');
+
+        // 循环广播
+        this.getBroadcast();
+        setInterval(function () {
+            _this2.getBroadcast();
+        }, 3e4);
+    },
+    getBroadcast: function getBroadcast() {
+        var _this3 = this;
+
+        var template = '<color=#ffffff>恭喜{}</color>\n<color=#ffffff>获得</color><color=#ffe35b>{}</color>';
+        window._main.api.broadcast().then(function (res) {
+            if (res.data.ok && res.data.r.length) {
+                _this3.messages = res.data.r;
+                _this3.messageIndex = 0;
+                _this3.broadcast.parent.opacity = 255;
+                if (!_this3.broadcast.parent.active) {
+                    _this3.broadcast.parent.active = true;
+                    _this3.broadcastAnimate();
+                    _this3.broadcast.children.forEach(function (child, i) {
+                        if (_this3.messages[_this3.messageIndex]) {
+                            var label = child.getComponent(cc.RichText);
+                            label.string = template.replace(/\{\}/g, function (x, y) {
+                                if (y === 17) {
+                                    return _this3.messages[_this3.messageIndex].phone || _this3.messages[_this3.messageIndex].name;
+                                }
+                                if (y === 68) return _this3.messages[_this3.messageIndex].goodsName;
+                            });
+                            _this3.messageIndex++;
+                            i === 0 ? child.y = 0 : child.y = -100;
+                        }
+                    });
+                }
+            }
+        });
+    },
+
+    // 广播循环动画
+    broadcastAnimate: function broadcastAnimate() {
+        var _this4 = this;
+
+        var _this = this,
+            template = '<color=#ffffff>恭喜{}</color>\n<color=#ffffff>获得</color><color=#ffe35b>{}</color>';
+        var tid = setInterval(function () {
+            if (_this4.messages.length === 1) {
+                window.clearInterval(tid);
+                _this.broadcast.parent.active = false;
+            }
+            _this4.broadcast.children.forEach(function (child) {
+                child.runAction(cc.sequence(cc.moveBy(.5, 0, 100), cc.callFunc(function () {
+                    if (this.y > 50) {
+                        if (_this.messageIndex === _this.messages.length) {
+                            setTimeout(function () {
+                                _this.broadcast.parent.active = false;
+                                window.clearInterval(tid);
+                            }, 2000);
+                            return;
+                        }
+                        this.y = -100;
+                        var label = this.getComponent(cc.RichText);
+                        label.string = template.replace(/\{\}/g, function (x, y) {
+                            if (y === 17) {
+                                return _this.messages[_this.messageIndex].phone || _this.messages[_this.messageIndex].name;
+                            }
+                            if (y === 68) return _this.messages[_this.messageIndex].goodsName;
+                        });
+                        _this.messageIndex++;
+                    }
+                }, child)));
+            });
+        }, 3e3);
     },
     init: function init() {
 
@@ -190,25 +267,25 @@ exports.default = cc.Class({
 
     // 获取可玩场次
     getModelList: function getModelList() {
-        var _this2 = this;
+        var _this5 = this;
 
         window._main.api.getModelList().then(function (res) {
             if (res.data.ok) {
 
                 res.data.r.forEach(function (item, i) {
-                    _this2.stakeBtns[i].active = true;
-                    _this2.stakeBtns[i].getChildByName('text').getComponent(cc.Label).string = item.name;
+                    _this5.stakeBtns[i].active = true;
+                    _this5.stakeBtns[i].getChildByName('text').getComponent(cc.Label).string = item.name;
 
-                    _this2.stakeBtns[i]._matchId = item.id;
-                    _this2.stakeBtns[i]._openState = item.openState;
-                    _this2.stakeBtns[i]._value = item.goldExpend;
+                    _this5.stakeBtns[i]._matchId = item.id;
+                    _this5.stakeBtns[i]._openState = item.openState;
+                    _this5.stakeBtns[i]._value = item.goldExpend;
 
                     // 非开放状态
                     if (!item.openState) {
-                        _this2.stakeBtns[i].getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.stakeBtnDisable;
-                    } else if (_this2.stakeValue === null) {
-                        _this2.stakeValue = item.goldExpend;
-                        _this2.setMatch(i, item.id);
+                        _this5.stakeBtns[i].getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.stakeBtnDisable;
+                    } else if (_this5.stakeValue === null) {
+                        _this5.stakeValue = item.goldExpend;
+                        _this5.setMatch(i, item.id);
                     }
                 });
             }
@@ -225,7 +302,7 @@ exports.default = cc.Class({
         });
     },
     showResult: function showResult(results) {
-        var _this3 = this;
+        var _this6 = this;
 
         if (results.grabResultInt === 3) {
             this.result.getComponent(cc.Sprite).spriteFrame = cc.loader.getRes('image/game/result-win', cc.SpriteFrame);
@@ -239,7 +316,16 @@ exports.default = cc.Class({
         this.result.getChildByName('list').getChildByName('text').getComponent(cc.Label).string = results.grabResultStr;
         this.result.runAction(cc.sequence(cc.jumpBy(.5, 0, 0, 10, 3), cc.callFunc(function () {
             setTimeout(function () {
-                _this3.result.active = false;
+                _this6.result.active = false;
+                // 5星奖励
+                if (results.starsGoods) {
+                    _this6.starPrompt.show(results.starsGoods.img, results.starsGoods.name);
+                }
+
+                if (window._main.user.starsNum && !localStorage.getStar) {
+                    window._main.node.getChildByName('guide').active = true;
+                    localStorage.getStar = true;
+                }
             }, 1000);
         })));
     },
@@ -247,11 +333,11 @@ exports.default = cc.Class({
         if (this.bgm && !window._main.audio.bgm.isPlaying) window._main.audio.bgm.play();
     },
     activityBoxShow: function activityBoxShow() {
-        var _this4 = this;
+        var _this7 = this;
 
         this.activityBox.active = true;
         setTimeout(function () {
-            _this4.activityBox.active = false;
+            _this7.activityBox.active = false;
         }, 3000);
     },
     updateStars: function updateStars() {
@@ -264,7 +350,7 @@ exports.default = cc.Class({
         });
     },
     listen: function listen() {
-        var _this5 = this;
+        var _this8 = this;
 
         var _this = this;
         // 点击 问号 和 星星
@@ -282,14 +368,14 @@ exports.default = cc.Class({
         // 开始按钮
         this.startBtn.on(cc.Node.EventType.TOUCH_START, function () {
             window._main.audio.clickStart.play();
-            _this5.startBtn.getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.startBtnPress;
+            _this8.startBtn.getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.startBtnPress;
         });
         this.startBtn.on(cc.Node.EventType.TOUCH_END, function () {
-            _this5.startBtn.getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.startBtnNormal;
+            _this8.startBtn.getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.startBtnNormal;
             // if (this.matchId === null) alert('请先下注')
             if (window._main.user.balance <= 0) {
                 window._main.shop.show();
-            } else _this5.claw.fall();
+            } else _this8.claw.fall();
         });
 
         // 下注按钮
@@ -308,9 +394,9 @@ exports.default = cc.Class({
                     window._main.shop.show();
                     return;
                 }
-                _this5.stakeValue = val;
+                _this8.stakeValue = val;
 
-                _this5.stakeBtns.forEach(function (btn) {
+                _this8.stakeBtns.forEach(function (btn) {
                     if (btn._openState) {
                         btn.getComponent(cc.Sprite).spriteFrame = window._main.spriteFrames.stakeBtnNormal;
                     } else {
@@ -329,9 +415,9 @@ exports.default = cc.Class({
                 text.runAction(cc.jumpTo(1, 0, 9, 10, 3));
 
                 // 下注
-                _this5.setStake(btn._index);
+                _this8.setStake(btn._index);
 
-                if (btn._matchId !== _this5.matchId) {
+                if (btn._matchId !== _this8.matchId) {
                     switch (btn._index) {
                         case 0:
                             window._main.api.monitor('500场', 3);
@@ -346,33 +432,33 @@ exports.default = cc.Class({
                 }
 
                 // 设置 当前场次 id
-                _this5.matchId = btn._matchId;
+                _this8.matchId = btn._matchId;
 
                 // 获取奖品列表
-                _this5.getPrizeList();
+                _this8.getPrizeList();
 
                 /*
                 * 高级场切换
                 */
-                _this5.claw.setModel(_this5.matchId);
+                _this8.claw.setModel(_this8.matchId);
             });
         });
 
         // 规则按钮
         this.ruleBtn.on(cc.Node.EventType.TOUCH_START, function () {
-            _this5.ruleBtn.scale = .95;
+            _this8.ruleBtn.scale = .95;
         });
         this.ruleBtn.on(cc.Node.EventType.TOUCH_END, function () {
-            _this5.ruleBtn.scale = 1;
-            _this5.rule.show();
+            _this8.ruleBtn.scale = 1;
+            _this8.rule.show();
         });
 
         // giftBtn
         this.giftBtn.on(cc.Node.EventType.TOUCH_START, function () {
-            _this5.giftBtn.scale = .95;
+            _this8.giftBtn.scale = .95;
         });
         this.giftBtn.on(cc.Node.EventType.TOUCH_END, function () {
-            _this5.giftBtn.scale = 1;
+            _this8.giftBtn.scale = 1;
             window._main.record.show();
         });
 

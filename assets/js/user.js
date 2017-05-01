@@ -16,11 +16,6 @@ export default {
                 this.avatar = res.data.r.profileImg
                 this.starsNum = res.data.r.starsNum
 
-                if (this.starsNum && !localStorage.getStar) {
-                    window._main.node.getChildByName('guide').active = true
-                    localStorage.getStar = true
-                }
-
                 window._main.game.updateStars()
 
                 window._main.game.score.getComponent(cc.Label)

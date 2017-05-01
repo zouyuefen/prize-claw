@@ -140,11 +140,6 @@ export default cc.Class({
                         this.main.game.prompt.show(this.results.goods.img)
                     }
                 }
-
-                // 5星奖励
-                if (this.results.starsGoods) {
-                    this.main.game.starPrompt.show(this.results.starsGoods.img)
-                }
             }
 
         } else {
@@ -157,7 +152,14 @@ export default cc.Class({
             .then(res => {
                 this.wait = false
                 if (res.data.r.starsGoods) {
-                    this.main.game.starPrompt.show(res.data.r.starsGoods.img)
+                    this.main.game.starPrompt.show(
+                        res.data.r.starsGoods.img,
+                        res.data.r.starsGoods.name
+                    )
+                }
+                if (window._main.user.starsNum && !localStorage.getStar) {
+                    window._main.node.getChildByName('guide').active = true
+                    localStorage.getStar = true
                 }
                 if (res.data.ok) this.results = res.data.r
                 else this.results = null

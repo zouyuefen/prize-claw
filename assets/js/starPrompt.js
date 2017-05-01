@@ -23,6 +23,10 @@ export default cc.Class({
         mask: {
             default: null,
             type: cc.Node
+        },
+        prizeName: {
+            default: null,
+            type: cc.Component
         }
     },
 
@@ -70,7 +74,7 @@ export default cc.Class({
 
     },
 
-    show(uri) {
+    show(uri, name) {
         cc.loader.load(uri, (err, texture) => {
             if (err) alert(err)
             else {
@@ -88,6 +92,8 @@ export default cc.Class({
 
                 // 炫光动画
                 this.glow.runAction(cc.repeatForever(cc.rotateBy(3, 360)))
+
+                this.prizeName.string = `恭喜获得${name}`
 
                 //是否登录
                 if (window._main.user.phone) {

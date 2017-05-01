@@ -89,6 +89,10 @@ export default cc.Class({
         starPrompt: {
             default: null,
             type: starPrompt
+        },
+        broadcast: {
+            default: null,
+            type: cc.Node
         }
     },
     onLoad() {
@@ -96,6 +100,80 @@ export default cc.Class({
         this.listen()
         window._main.api.monitor('进入游戏', 1)
         window._main.api.onEvent('进入游戏')
+
+        // 循环广播
+        this.getBroadcast()
+        setInterval(() => {
+            this.getBroadcast()
+        }, 3e4)
+    },
+
+    getBroadcast() {
+        const template = '<color=#ffffff>恭喜{}</color>\n<color=#ffffff>获得</color><color=#ffe35b>{}</color>'
+        window._main.api.broadcast()
+        .then(res => {
+            if (res.data.ok && res.data.r.length) {
+                this.messages = res.data.r
+                this.messageIndex = 0
+                this.broadcast.parent.opacity = 255
+                if (!this.broadcast.parent.active) {
+                    this.broadcast.parent.active = true
+                    this.broadcastAnimate()
+                    this.broadcast.children.forEach((child, i) => {
+                        if (this.messages[this.messageIndex]) {
+                            const label = child.getComponent(cc.RichText)
+                            label.string = template.replace(/\{\}/g, (x, y) => {
+                                if (y === 17) {
+                                    return this.messages[this.messageIndex].phone ||
+                                        this.messages[this.messageIndex].name
+                                }
+                                if (y === 68) return this.messages[this.messageIndex].goodsName
+                            })
+                            this.messageIndex++
+                            i === 0 ? child.y = 0 : child.y = -100
+                        }
+                    })
+                }
+            }
+        })
+    },
+    // 广播循环动画
+    broadcastAnimate() {
+        const 
+            _this = this,
+            template = '<color=#ffffff>恭喜{}</color>\n<color=#ffffff>获得</color><color=#ffe35b>{}</color>'
+        const tid = setInterval(() => {
+            if (this.messages.length === 1) {
+                window.clearInterval(tid)
+                _this.broadcast.parent.active = false
+            }
+            this.broadcast.children.forEach(child => {
+                child.runAction(cc.sequence(
+                    cc.moveBy(.5, 0, 100),
+                    cc.callFunc(function() {
+                        if (this.y > 50) {
+                            if (_this.messageIndex === _this.messages.length) {
+                                setTimeout(function() {
+                                    _this.broadcast.parent.active = false
+                                    window.clearInterval(tid)
+                                }, 2000)
+                                return
+                            }
+                            this.y = -100
+                            const label = this.getComponent(cc.RichText)
+                            label.string = template.replace(/\{\}/g, function(x, y) {
+                                if (y === 17) {
+                                    return _this.messages[_this.messageIndex].phone ||
+                                        _this.messages[_this.messageIndex].name
+                                }
+                                if (y === 68) return _this.messages[_this.messageIndex].goodsName 
+                            })
+                            _this.messageIndex++
+                        }
+                    }, child)
+                ))
+            })
+        }, 3e3)
     },
     init() {
 
@@ -237,6 +315,19 @@ export default cc.Class({
             cc.callFunc(() => {
                 setTimeout(() => {
                     this.result.active = false
+                    // 5星奖励
+                    if (results.starsGoods) {
+                        this.starPrompt.show(
+                            results.starsGoods.img,
+                            results.starsGoods.name
+                        )
+                    }
+
+                    if (window._main.user.starsNum && !localStorage.getStar) {
+                        window._main.node.getChildByName('guide').active = true
+                        localStorage.getStar = true
+                    }
+                    
                 }, 1000)
             })
         ))

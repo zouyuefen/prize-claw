@@ -143,6 +143,10 @@ function Api() {
         }
     }
 
+    this.broadcast = function() {
+        return axios.get(`${SERVER}/doll/awardInfo`)
+    }
+
 }
 
 Api.prototype = Base

@@ -134,11 +134,6 @@ exports.default = cc.Class({
                         this.main.game.prompt.show(this.results.goods.img);
                     }
                 }
-
-                // 5星奖励
-                if (this.results.starsGoods) {
-                    this.main.game.starPrompt.show(this.results.starsGoods.img);
-                }
             }
         } else {
             this.free();
@@ -149,7 +144,11 @@ exports.default = cc.Class({
             this.main.api.grab(null, this.main.game.matchId).then(function (res) {
                 _this2.wait = false;
                 if (res.data.r.starsGoods) {
-                    _this2.main.game.starPrompt.show(res.data.r.starsGoods.img);
+                    _this2.main.game.starPrompt.show(res.data.r.starsGoods.img, res.data.r.starsGoods.name);
+                }
+                if (window._main.user.starsNum && !localStorage.getStar) {
+                    window._main.node.getChildByName('guide').active = true;
+                    localStorage.getStar = true;
                 }
                 if (res.data.ok) _this2.results = res.data.r;else _this2.results = null;
                 _this2.main.user.update();

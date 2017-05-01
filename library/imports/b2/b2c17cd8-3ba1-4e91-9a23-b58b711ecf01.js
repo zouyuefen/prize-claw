@@ -149,6 +149,10 @@ function Api() {
             (_window$TDAPP = window.TDAPP).onEvent.apply(_window$TDAPP, arguments);
         }
     };
+
+    this.broadcast = function () {
+        return axios.get(SERVER + '/doll/awardInfo');
+    };
 }
 
 Api.prototype = Base;

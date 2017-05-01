@@ -32,6 +32,10 @@ exports.default = cc.Class({
         mask: {
             default: null,
             type: cc.Node
+        },
+        prizeName: {
+            default: null,
+            type: cc.Component
         }
     },
 
@@ -63,7 +67,7 @@ exports.default = cc.Class({
             window._main.login.show();
         });
     },
-    show: function show(uri) {
+    show: function show(uri, name) {
         var _this2 = this;
 
         cc.loader.load(uri, function (err, texture) {
@@ -79,6 +83,8 @@ exports.default = cc.Class({
 
                 // 炫光动画
                 _this2.glow.runAction(cc.repeatForever(cc.rotateBy(3, 360)));
+
+                _this2.prizeName.string = "\u606D\u559C\u83B7\u5F97" + name;
 
                 //是否登录
                 if (window._main.user.phone) {
